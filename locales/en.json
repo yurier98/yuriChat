@@ -1,0 +1,243 @@
+{
+  "main": {
+    "question": "Awesome! Tell me a bit more about you.",
+    "about": "I am a second-year Master's student in Mathematics and Applications, specializing in Statistical Engineering and Finance – Data Science, at Université Paris-Dauphine PSL in France. I focus on applied statistics, modeling, and data science, with a strong interest in data analysis, algorithms, and software implementation, aiming to contribute to practical applications of artificial intelligence in today's world. {space} With my mathematical background and understanding of emerging technologies, I am able to grasp theoretical concepts and design effective solutions in a rapidly growing field. {space} Access other pages directly: {links}",
+    "powered": "Powered by Nuxt"
+  },
+  "palette": {
+    "clear": {
+      "cancel": "Cancel",
+      "submit": "Delete",
+      "title": "Are you sure you want to delete this conversation?",
+      "description": "This action cannot be undone."
+    },
+    "cmd": {
+      "placeholder": "Use the arrow keys to navigate through the preset prompts. Press Enter to send the message.",
+      "send": "Send new message",
+      "sending": "Sending...",
+      "chat": "ArtChat",
+      "writings": "See articles",
+      "projects": "See projects"
+    },
+    "tooltip": {
+      "send": "Send a new predefined message",
+      "clear": "Delete all messages",
+      "theme": "Change the theme",
+      "language": "Change the language",
+      "chat": "Go back to ArtChat to resume the conversation",
+      "writings": "Read more articles",
+      "projects": "Discover other projects",
+      "back": "Go back"
+    }
+  },
+  "command": {
+    "actions": "Components",
+    "arthur": "More about Yurier",
+    "interface": "Change the interface",
+    "theme": {
+      "label": "Change theme",
+      "prompt": "How can I change the theme?"
+    },
+    "homelab": {
+      "label": "Homelab stuff",
+      "prompt": "How can I view the homelab of Yurier?"
+    },
+    "hardware": {
+      "label": "Hardware setup",
+      "prompt": "How can I view the hardware setup of Yurier?"
+    },
+    "software": {
+      "label": "Softwares and Apps",
+      "prompt": "Which softwares and apps does Yurier use?"
+    },
+    "ide": {
+      "label": "IDEs and Font",
+      "prompt": "Tell me more about the IDE and font that Yurier uses?"
+    },
+    "stats": {
+      "label": "Dev Statistics",
+      "prompt": "How can I view the statistics concerning Yurier?"
+    },
+    "weather": {
+      "label": "Weather",
+      "prompt": "How can I view the weather conditions near Yurier?"
+    },
+    "location": {
+      "label": "Location",
+      "prompt": "How can I view the location of Yurier?"
+    },
+    "language": {
+      "label": "Change language",
+      "prompt": "How can I change the chat language?"
+    },
+    "activity": {
+      "label": "Activity",
+      "prompt": "What are you currently doing?"
+    },
+    "projects": {
+      "label": "Projects",
+      "prompt": "Tell me about your projects."
+    },
+    "writings": {
+      "label": "Writings",
+      "prompt": "What are your latest articles?"
+    },
+    "experiences": {
+      "label": "Experiences",
+      "prompt": "What experiences do you have in your career?"
+    },
+    "skills": {
+      "label": "Skills",
+      "prompt": "What are your skills?"
+    },
+    "status": {
+      "label": "Homelab status",
+      "prompt": "I saw you have a homelab, is it currently working?"
+    },
+    "resume": {
+      "label": "Resume",
+      "prompt": "Can you send me your resume?"
+    },
+    "contact": {
+      "label": "Contact",
+      "prompt": "How can I contact you?"
+    },
+    "hobbies": {
+      "label": "Hobbies and passions",
+      "prompt": "What are your hobbies? Your passions? Your interests?"
+    },
+    "credits": {
+      "label": "Credits",
+      "prompt": "How is this chat made?"
+    }
+  },
+  "chat": {
+    "state": {
+      "thinking": "Thinking...",
+      "fetching": "Fetching the data...",
+      "generating": "Generating the component...",
+      "checking": "Checking of the Résumé...",
+      "done": "Done!"
+    },
+    "welcome": "Welcome to ArtChat",
+    "ask": "Ask me anything about Arthur DANJOU"
+  },
+  "tool": {
+    "language": {
+      "change": "Change language",
+      "response": {
+        "control": "I added the language switch control above so you can switch directly.",
+        "choose": "Choose English, French, or Spanish",
+        "kbd": "Press {kbd} on your keyboard"
+      }
+    },
+    "activity": {
+      "offline": "I'm currently offline. Come back later to see what I'm working on. {maths}",
+      "working": "I'm actually online! Check what I'm working on just below.",
+      "idling": "I'm idling on my computer with {editor} running in background.",
+      "maths": "I am probably doing some maths or sleeping.",
+      "response": "The statistics are powered and saved by WakaTime.",
+      "tooltip": {
+        "online": "I'm online 👋",
+        "offline": "I'm offline 🫥",
+        "idling": "I'm sleeping 😴"
+      },
+      "started": "Started {ago}, the {date} at {hour}",
+      "secret": "Secret Project"
+    },
+    "location": "I'm currently based in {location}. See below for more details.",
+    "contact": "There are different ways to contact me. Here is a list:",
+    "duplicated": {
+      "title": "⚠️ I have detected duplicated messages",
+      "description": "I have therefore removed the older duplicated messages to lighten the application."
+    },
+    "stats": {
+      "main": "I collect some data for {time} years, started the {date}. I've coded for a total of {hours} hours.",
+      "editors": "My top editors are {editors}",
+      "os": "My best OS is {os}",
+      "languages": "My favorite languages are {languages}",
+      "separator": " and ",
+      "tooltip": {
+        "date": "That was so long ago 🫣",
+        "hours": "That's a lot 😮"
+      }
+    },
+    "theme": {
+      "switch": "Switch theme",
+      "light": "Light",
+      "dark": "Dark",
+      "response": {
+        "control": "I added the theme toggle control above so you can switch directly.",
+        "choose": "Choose Light (sun icon) or Dark (moon icon)",
+        "kbd": "Press {kbd} on your keyboard"
+      }
+    },
+    "weather": {
+      "main": "Weather",
+      "powered_by": "Powered by OpenWeatherMap",
+      "low": "Low",
+      "high": "High",
+      "humidity": "Humidity",
+      "wind": "Wind"
+    },
+    "projects": {
+      "main": "A selection of my projects developed in R, Python, and web development, covering diverse areas such as data analysis, machine learning, and web applications. These projects highlight my skills in coding, problem-solving, and solution design. {space}Here, I present the three projects I am most proud of, but you can explore all my projects directly in the {projects} page.",
+      "link": "Projects"
+    },
+    "writings": {
+      "main": "I share my reflections on mathematics, artificial intelligence, development and my passions, by organizing them to follow the evolution of my ideas and projects. {space}Here you will find the two most recent articles, but all my writings are accessible in the {writings} page, to explore my universe more in depth, Maths and AI.",
+      "link": "Articles"
+    },
+    "hobbies": "Outside of programming and my technical projects, I dedicate much of my free time to my passions: sports, music, traveling, and spending time with friends. Sports teach me discipline and perseverance, music fuels my creativity, and traveling opens me up to new cultures and ways of thinking, which also nurtures my intellectual curiosity.\nThese passions help me maintain balance and strengthen the qualities I bring to both my studies and my career: curiosity, commitment, autonomy, and a constant desire to improve. They make me someone who is motivated, adaptable, and always ready to take on new challenges.",
+    "credits": {
+      "made": "This site was designed with {nuxt} and then deployed via {cloudflare}",
+      "heart": "Made with ❤️ and a lot of reflection.",
+      "chat": "A big thank you to {chat}, my personal assistant, always ready to answer your questions with clarity and speed.",
+      "copyrights": "© {year} Arthur Danjou - All rights reserved.",
+      "thank": "Thank you for visiting my portfolio.",
+      "message": "Do not hesitate to leave a message, a suggestion, a remark or just a nice word - everything is welcome!",
+      "tooltip": "My IA agent "
+    },
+    "resume": {
+      "main": "Below are two versions of my résumé: one in French and one in English, tailored to suit different academic and professional contexts. {space} Feel free to choose the one that best fits your needs by clicking the corresponding button.",
+      "uploaded": "Uploaded",
+      "files": {
+        "en": "English version",
+        "fr": "French version",
+        "pdf": "PDF file"
+      }
+    },
+    "homelab": "I have had a homelab for several years, presented in my article: {article}.{space}\nI have also set up a status page, {status}, to monitor the real-time state of my applications, allowing me to continuously test, monitor, and improve my projects.{space}\nThis experience has given me solid expertise in infrastructure, automation, and system administration, which I apply to both my personal and professional projects.",
+    "skills": "As a software engineer and mathematics student, I combine scientific rigor with technical pragmatism to design solutions tailored to the challenges of data and mathematical projects. My approach focuses on a deep understanding of needs, from data preparation to deployment, while emphasizing modeling and performance optimization.Passionate about artificial intelligence and data science, I strive to balance innovation with statistical robustness. Always eager to learn, I explore both technological advancements and entrepreneurial or financial challenges. Curious and enthusiastic, I enjoy sharing knowledge and discovering new concepts, whether in theorems or emerging technologies.",
+    "experiences": {
+      "main": "Throughout my journey, I've had the opportunity to contribute to various projects — from student jobs and summer internships to self-taught experiences.\nEach one has deepened my practical understanding and strengthened my skills in statistics, software development, and data management, while exposing me to a range of technical environments.\nThey also taught me to work effectively in a team, while developing strong autonomy and adaptability.",
+      "today": "Today"
+    }
+  },
+  "error": {
+    "main": "I think you're lost, let's go back to the",
+    "redirect": "homepage"
+  },
+  "alert": "For lack of time, I did not have time to translate this content into English. Thank you for your understanding.",
+  "post": {
+    "footer": {
+      "thanks": "Thanks for reading! My name is {name}, and I love writing about AI, data science, and the intersection between mathematics and programming. {jump} I've been coding and exploring math for years, and I'm always learning something new—whether it's self-hosting tools in my homelab, experimenting with machine learning models, or diving into statistical methods. {jump} I share my knowledge here because I know how valuable clear, hands-on resources can be, especially when you're just getting started or exploring something deeply technical. {jump} If you have any questions or just want to chat, feel free to reach out to me on {linkedin} or {github  }. {jump} I hope you enjoyed this post and learned something useful. If you did, {comment}—it really helps and means a lot!",
+      "comment": "consider sharing it"
+    },
+    "link": {
+      "copied": "Link copied",
+      "copy": "Copy link"
+    },
+    "top": "Go to top"
+  },
+  "writings": {
+    "description": "All my reflections on programming, mathematics, the conception of artificial intelligence, etc., are put in chronological order.",
+    "title": "Writings on math, artificial intelligence, development, and my passions.",
+    "back": "Return to the writings"
+  },
+  "projects": {
+    "description": "A collection of my projects using R, Python, or web development technologies. These projects span various domains, including data analysis, machine learning, and web applications, showcasing my skills in coding, problem-solving, and project development.",
+    "title": "All my projects I have worked on, both academic and personal",
+    "back": "Return to projects"
+  }
+}

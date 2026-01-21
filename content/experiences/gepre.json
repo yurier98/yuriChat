@@ -1,0 +1,17 @@
+{
+  "title": {
+    "en": "Project Manager",
+    "es": "Project Manager"
+  },
+  "description": {
+    "en": "At Sevetys, I worked as a Data Analyst on topics related to client and patient data. My responsibilities included Python development using PySpark on Microsoft Azure, data modeling based on business needs, and ensuring data quality. This experience allowed me to deepen my data engineering skills while working autonomously in a demanding cloud-based environment.",
+    "es": "Dirijí un equipo ágil de 4 personas en el desarrollo de varios módulos para GEPRE, un sistema de gestión de préstamos y pedidos de productos. Utilicé un enfoque ágil para guiar el proyecto, y herramientas Gestioné el backlog y utilizé OpenProject y Taiga para garantizar entregas de calidad, fomentando un entorno de mejora continua mediante inteligencia emocional y resolución proactiva de problemas.",
+    "fr": "Chez Sevetys, j'ai travaillé en tant que Data Analyst sur des problématiques liées aux données clients et patients. J'étais chargé du développement en Python avec PySpark sur Microsoft Azure, de la modélisation des données selon les besoins métier, ainsi que de l'assurance qualité des données. Cette expérience m'a permis d'approfondir mes compétences en ingénierie des données et de travailler en autonomie dans un environnement cloud exigeant."
+  },
+  "company": "Universidad de las Ciencias Informáticas",
+  "companyUrl": "https://www.uci.cu",
+  "location": "La Habana, Cuba",
+  "startDate": "2023-07",
+  "endDate": "2023-12",
+  "tags": ["Gestión Ágil de Proyectos", "Scrum", "Django", "Arquitecto", "Docker"]
+}

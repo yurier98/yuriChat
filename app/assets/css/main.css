@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@plugin '@tailwindcss/typography';
+
+@theme static {
+  --animate-wave: wave 3s infinite
+}
+
+:root {
+    --ui-black: #000000;
+    --ui-white: #ffffff;
+    --ui-bg-black: #0a0a0a;
+    --ui-bg-white: #f8f8f8;
+    --ui-bg: #f8f8f8;
+
+    --ui-container: var(--container-6xl);
+
+    --ui-font-family: 'DM Sans', sans-serif;
+    transition-duration: 0.7s;
+
+    .prose {
+      max-width: none;
+    }
+}
+
+.dark {
+    --ui-black: #000000;
+    --ui-white: #ffffff;
+    --ui-bg-white: #f8f8f8;
+    --ui-bg-black: #0a0a0a;
+    --ui-bg: #0a0a0a;
+
+    --ui-container: var(--container-6xl);
+
+    --ui-font-family: 'DM Sans', sans-serif;
+    transition-duration: 0.7s;
+
+    .prose {
+      max-width: none;
+    }
+}
+
+@keyframes wave {
+    0%,
+    50%,
+    100% {
+      transform: rotate(-12deg);
+    }
+    25%, 75% {
+      transform: rotate(3deg) scale(1.5);
+    }
+  }
+
