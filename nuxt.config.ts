@@ -1,4 +1,8 @@
+import process from 'node:process'
 import { definePerson } from 'nuxt-schema-org/schema'
+
+const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://yurier98.github.io'
+const nitroPreset = process.env.NITRO_PRESET || 'static'
 
 export default defineNuxtConfig({
   compatibilityDate: '2026-02-05',
@@ -23,6 +27,10 @@ export default defineNuxtConfig({
 
   icon: {
     serverBundle: 'local',
+    clientBundle: {
+      scan: true,
+      sizeLimitKb: 512,
+    },
   },
 
   ogImage: {
@@ -33,7 +41,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: 'https://yurierherrera.nuxt.com',
+    url: siteUrl,
     name: 'Developer enjoying Artificial Intelligence and Machine Learning. Mathematics Student at Paris Dauphine-PSL University specialised in Statistics and Data Science.',
   },
 
@@ -48,7 +56,7 @@ export default defineNuxtConfig({
       image: '/yurier.jpeg',
       description: 'AI researcher and technical author specializing in machine learning and neural networks',
       jobTitle: 'Principal AI Researcher',
-      url: 'https://yurierherrera.nuxt.com',
+      url: siteUrl,
     }),
   },
 
@@ -93,7 +101,7 @@ export default defineNuxtConfig({
   // Nuxt I18N
   i18n: {
     strategy: 'no_prefix',
-    baseUrl: 'https://yurierherrera.nuxt.com',
+    baseUrl: siteUrl,
     locales: [
       {
         label: 'English',
@@ -131,7 +139,7 @@ export default defineNuxtConfig({
     experimental: {
       openAPI: true,
     },
-    preset: 'cloudflare-module',
+    preset: nitroPreset,
     cloudflare: {
       deployConfig: true,
       nodeCompat: true,
@@ -161,7 +169,7 @@ export default defineNuxtConfig({
     },
     public: {
       i18n: {
-        baseUrl: 'https://yurierherrera.nuxt.com',
+        baseUrl: siteUrl,
       },
     },
   },

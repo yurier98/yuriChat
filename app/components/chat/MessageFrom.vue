@@ -57,7 +57,11 @@ const hasDynamicComponent = computed(() => Boolean(dynamicComponent.value))
 <template>
   <div class="group space-y-2 duration-200">
     <div class="flex items-end gap-2.5">
-      <UAvatar src="/yurier.jpeg" size="lg" class="shrink-0 shadow-[0_8px_22px_rgba(0,0,0,0.14)] ring-2 ring-white/80 dark:ring-white/10" alt="Yurier Herrera" />
+      <img
+        src="/yurier.jpeg"
+        alt="Yurier Herrera"
+        class="h-10 w-10 shrink-0 rounded-full object-cover shadow-[0_8px_22px_rgba(0,0,0,0.14)] ring-2 ring-white/80 dark:ring-white/10"
+      >
 
       <div class="min-w-0 flex-1">
         <div

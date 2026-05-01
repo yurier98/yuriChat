@@ -1,4 +1,4 @@
-export default defineCachedEventHandler(async (event) => {
+export default defineCachedEventHandler(async () => {
   // Universidad de las Ciencias Informáticas (UCI) - La Habana, Cuba
   const uciLocation = {
     name: 'Universidad de las Ciencias Informáticas',
@@ -30,8 +30,8 @@ export default defineCachedEventHandler(async (event) => {
       month: 'long',
       day: 'numeric',
       hour: '2-digit',
-      minute: '2-digit'
-    })
+      minute: '2-digit',
+    }),
   }
 
   return uciLocation
