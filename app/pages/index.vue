@@ -18,10 +18,10 @@ watch(
     await nextTick()
     if (lastLang.value === locale.value && parents.value && messages.length > 0) {
       const children = parents.value.children
-      if (children.length > 0 && children[children.length - 2]) {
-        const lastChild = children[children.length - 2] as HTMLElement
+      if (children.length > 0 && children[children.length - 1]) {
+        const lastChild = children[children.length - 1] as HTMLElement
         window.scrollTo({
-          top: lastChild.offsetTop - 10,
+          top: Math.max(lastChild.offsetTop - 96, 0),
           behavior: 'smooth',
         })
       }
@@ -38,28 +38,49 @@ watch(
 </script>
 
 <template>
-  <UContainer>
+  <UContainer class="pb-32">
     <ChatMain />
-    <div ref="parents" class="space-y-4 md:my-32 mb-16">
+    <div ref="parents" class="mx-auto mb-16 max-w-4xl space-y-5 md:mb-28">
       <ChatMessageContainer
         v-motion
         :initial="{
           opacity: 0,
-          y: 200,
-          scale: 0.6,
+          y: 24,
         }"
         :enter="{
           opacity: 1,
           y: 0,
-          scale: 1,
           transition: {
-            delay: 900,
+            delay: 850,
             ease: 'easeOut',
           },
         }"
         :message="{
           id: 0,
-          content: 'main.question',
+          content: 'main.intro',
+          sender: ChatSender.ASSISTANT,
+          state: ChatState.SENT,
+          type: ChatType.INIT,
+          createdAt: new Date(),
+        }"
+      />
+      <ChatMessageContainer
+        v-motion
+        :initial="{
+          opacity: 0,
+          y: 24,
+        }"
+        :enter="{
+          opacity: 1,
+          y: 0,
+          transition: {
+            delay: 1150,
+            ease: 'easeOut',
+          },
+        }"
+        :message="{
+          content: 'main.visitor',
+          id: 0,
           sender: ChatSender.USER,
           state: ChatState.SENT,
           type: ChatType.INIT,
@@ -70,22 +91,20 @@ watch(
         v-motion
         :initial="{
           opacity: 0,
-          y: 200,
-          scale: 0.6,
+          y: 24,
         }"
         :enter="{
           opacity: 1,
           y: 0,
-          scale: 1,
           transition: {
-            delay: 1200,
+            delay: 1450,
             ease: 'easeOut',
           },
         }"
         :message="{
-          content: 'main.about',
+          content: 'main.ready',
           id: 0,
-          sender: ChatSender.ARTHUR,
+          sender: ChatSender.ASSISTANT,
           state: ChatState.SENT,
           type: ChatType.INIT,
           createdAt: new Date(),

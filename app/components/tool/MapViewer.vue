@@ -62,7 +62,7 @@ const googleMapsUrl = computed(() => {
         Ver en OpenStreetMap
         <UIcon name="i-ph-arrow-square-out-duotone" class="text-xs" />
       </a>
-      
+
       <a
         :href="googleMapsUrl"
         target="_blank"
@@ -80,7 +80,7 @@ const googleMapsUrl = computed(() => {
       <div class="flex items-center gap-1">
         <UIcon name="i-ph-crosshair-duotone" class="text-xs" />
         <span>
-          {{ location.coordinates.latitude.toFixed(4) }}°N, 
+          {{ location.coordinates.latitude.toFixed(4) }}°N,
           {{ Math.abs(location.coordinates.longitude).toFixed(4) }}°O
         </span>
       </div>

@@ -1,45 +1,37 @@
 <script setup lang="ts">
 const { t } = useI18n({ useScope: 'global' })
+
+const title = computed(() => t('chat.welcome'))
+const typingStyle = computed(() => ({
+  '--typing-characters': `${title.value.length}`,
+  '--typing-width': `${title.value.length}ch`,
+}))
 </script>
 
 <template>
-  <div class="flex flex-col my-8 md:my-32">
+  <section class="flex flex-col items-center justify-center pt-20 pb-10 sm:pt-28 md:pt-36 md:pb-16">
     <h1
       v-motion
       :initial="{
         opacity: 0,
-        y: 100,
-        scale: 0.6,
+        y: 16,
       }"
       :enter="{
         opacity: 1,
         y: 0,
-        scale: 1,
-        transition: { ease: 'linear' },
+        transition: { ease: 'easeOut', duration: 450 },
       }"
-      class="font-bold text-5xl duration-200"
+      class="text-center text-5xl font-bold tracking-normal text-black sm:text-6xl md:text-7xl dark:text-white"
+      :aria-label="title"
     >
-      {{ t('chat.welcome') }}
+      <span
+        :key="title"
+        class="chat-typing-title inline-block max-w-full overflow-hidden whitespace-nowrap border-r-[0.08em]"
+        :style="typingStyle"
+        aria-hidden="true"
+      >
+        {{ title }}
+      </span>
     </h1>
-    <h2
-      v-motion
-      :initial="{
-        opacity: 0,
-        y: 200,
-        scale: 0.6,
-      }"
-      :enter="{
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        transition: {
-          delay: 300,
-          ease: 'linear',
-        },
-      }"
-      class="text-3xl bg-gradient-to-r from-inverted/40 to-inverted/75 to-50% bg-clip-text text-transparent font-medium duration-200"
-    >
-      {{ t('chat.ask') }}
-    </h2>
-  </div>
+  </section>
 </template>

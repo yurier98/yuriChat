@@ -28,6 +28,7 @@ function getLanguageForText(text: { en: string, es: string, fr: string }) {
               {{ getLanguageForText(experience.title) }}
             </h1>
             <NuxtLink
+              v-if="experience.companyUrl"
               :to="experience.companyUrl"
               target="_blank"
               rel="noopener noreferrer"
@@ -36,6 +37,9 @@ function getLanguageForText(text: { en: string, es: string, fr: string }) {
                 <span class="text-muted">@</span>{{ experience.company }}
               </h2>
             </NuxtLink>
+            <h2 v-else class="text-xl text-neutral-800 dark:text-neutral-200 font-semibold">
+              <span class="text-muted">@</span>{{ experience.company }}
+            </h2>
           </div>
         </div>
         <p class="text-justify">

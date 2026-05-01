@@ -52,3 +52,32 @@
     }
   }
 
+@keyframes chatTyping {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: min(var(--typing-width), 100%);
+  }
+}
+
+@keyframes chatCursor {
+  0%,
+  45% {
+    border-right-color: var(--ui-primary);
+  }
+
+  46%,
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+.chat-typing-title {
+  width: min(var(--typing-width), 100%);
+  border-right-color: var(--ui-primary);
+  animation:
+    chatTyping 1s steps(var(--typing-characters)) 0.2s both,
+    chatCursor 0.85s step-end 0s infinite;
+}

@@ -18,7 +18,6 @@ tags:
 
 # AirPaint: Creando un lienzo digital con gestos para niños usando Visión por Computadora
 
-
 ## Introducción
 
 Siempre me ha apasionado crear experiencias más naturales e intuitivas, donde la tecnología se desvanece para dar paso a interacciones casi mágicas. Esta inspiración nace directamente del cine: en los hologramas que Tony Stark manipula en *Iron Man*, las películas de ciencia ficción han sembrado en mí la curiosidad por hacer realidad esas visiones futuristas.

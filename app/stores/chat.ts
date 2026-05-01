@@ -24,7 +24,7 @@ export const useChatStore = defineStore('chat', () => {
   }
 
   function addMessage(type: ChatType, content: string, sender: ChatSender, fetchStates: ChatFetchState[]) {
-    if (sender === ChatSender.ARTHUR) {
+    if (sender === ChatSender.ASSISTANT) {
       const message: ChatMessage = {
         id: id++,
         type,

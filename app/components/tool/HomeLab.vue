@@ -10,17 +10,15 @@
       </template>
       <template #status>
         <UButton
-          label="ArtStatus"
+          label="Status"
           trailing-icon="i-simple-icons-uptimekuma"
           variant="link"
-          to="https://go.arthurdanjou.fr/status"
-          target="_blank"
           class="p-0"
         />
       </template>
       <template #article>
         <UButton
-          label="ArtLab"
+          label="Homelab"
           trailing-icon="i-ph-rocket-launch-duotone"
           variant="link"
           to="/projects/artlab"

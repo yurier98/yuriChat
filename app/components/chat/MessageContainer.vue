@@ -6,25 +6,23 @@ const props = defineProps<{
   message: ChatMessage
 }>()
 
-const isArthur = computed(() => props.message.sender === ChatSender.ARTHUR)
+const isAssistant = computed(() => props.message.sender === ChatSender.ASSISTANT)
 
 const { t, locale } = useI18n({ useScope: 'global' })
 const formatDate = computed(() => useDateFormat(props.message.createdAt, 'D MMMM YYYY, HH:mm', { locales: locale.value ?? 'en' }).value)
 </script>
 
 <template>
-  <ChatMessageFromArthur v-if="isArthur" :message="props.message" />
-  <div v-else class="group flex flex-col gap-2 duration-200">
-    <div class="flex flex-col-reverse md:flex-row-reverse items-end">
-      <UCard
-        variant="solid"
-        class="rounded-xl mt-1 bg-sky-600 text-neutral-100 md:max-w-3/4 font-medium"
-        :ui="{ body: 'sm:p-2', header: 'sm:p-2', footer: 'sm:p-2' }"
+  <ChatMessageFrom v-if="isAssistant" :message="props.message" />
+  <div v-else class="group flex flex-col items-end gap-2 duration-200">
+    <div class="flex w-full justify-end">
+      <div
+        class="max-w-[82%] rounded-[1.65rem] rounded-br-[0.7rem] border border-white/20 bg-[#0A84FF] px-4 py-2.5 text-[15px] font-medium leading-snug text-white shadow-[0_10px_30px_rgba(10,132,255,0.22),inset_0_1px_0_rgba(255,255,255,0.28)] sm:max-w-[68%] md:max-w-[58%]"
       >
         {{ t(message.content || '') }}
-      </UCard>
+      </div>
     </div>
-    <div class="text-muted-foreground opacity-0 group-hover:opacity-80 duration-500 flex text-xs italic justify-end">
+    <div class="flex justify-end text-xs text-muted opacity-0 duration-500 group-hover:opacity-80">
       {{ formatDate }}
     </div>
   </div>

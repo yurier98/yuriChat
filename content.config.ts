@@ -42,7 +42,6 @@ export default defineContentConfig({
           slug: z.string(),
           name: z.object({
             en: z.string(),
-            fr: z.string(),
             es: z.string(),
           }),
         }),
@@ -56,7 +55,6 @@ export default defineContentConfig({
           name: z.string(),
           description: z.object({
             en: z.string(),
-            fr: z.string(),
             es: z.string(),
           }),
           category: z.string(),
@@ -72,7 +70,6 @@ export default defineContentConfig({
             id: z.string(),
             name: z.object({
               en: z.string(),
-              fr: z.string(),
               es: z.string(),
             }),
             items: z.array(z.object({
@@ -90,7 +87,6 @@ export default defineContentConfig({
         schema: z.object({
           title: z.object({
             en: z.string(),
-            fr: z.string(),
             es: z.string(),
           }),
           company: z.string(),
@@ -100,7 +96,6 @@ export default defineContentConfig({
           location: z.string(),
           description: z.object({
             en: z.string(),
-            fr: z.string(),
             es: z.string(),
           }),
           tags: z.array(z.string()),

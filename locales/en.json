@@ -1,6 +1,9 @@
 {
   "main": {
     "question": "Awesome! Tell me a bit more about you.",
+    "intro": "I'm Yurier Herrera, a full-stack developer and IT project manager focused on useful, polished digital products.",
+    "visitor": "Hi Yurier, show me what you do.",
+    "ready": "Of course. Start with my projects or writings, or open the message dock to ask about anything else. {links}",
     "about": "I am a second-year Master's student in Mathematics and Applications, specializing in Statistical Engineering and Finance – Data Science, at Université Paris-Dauphine PSL in France. I focus on applied statistics, modeling, and data science, with a strong interest in data analysis, algorithms, and software implementation, aiming to contribute to practical applications of artificial intelligence in today's world. {space} With my mathematical background and understanding of emerging technologies, I am able to grasp theoretical concepts and design effective solutions in a rapidly growing field. {space} Access other pages directly: {links}",
     "powered": "Powered by Nuxt"
   },
@@ -15,16 +18,16 @@
       "placeholder": "Use the arrow keys to navigate through the preset prompts. Press Enter to send the message.",
       "send": "Send new message",
       "sending": "Sending...",
-      "chat": "ArtChat",
-      "writings": "See articles",
-      "projects": "See projects"
+      "chat": "Chat",
+      "writings": "Articles",
+      "projects": "Projects"
     },
     "tooltip": {
       "send": "Send a new predefined message",
       "clear": "Delete all messages",
       "theme": "Change the theme",
       "language": "Change the language",
-      "chat": "Go back to ArtChat to resume the conversation",
+      "chat": "Go back to Chat to resume the conversation",
       "writings": "Read more articles",
       "projects": "Discover other projects",
       "back": "Go back"
@@ -32,7 +35,7 @@
   },
   "command": {
     "actions": "Components",
-    "arthur": "More about Yurier",
+    "about_person": "More about Yurier",
     "interface": "Change the interface",
     "theme": {
       "label": "Change theme",
@@ -119,8 +122,8 @@
       "checking": "Checking of the Résumé...",
       "done": "Done!"
     },
-    "welcome": "Welcome to ArtChat",
-    "ask": "Ask me anything about Arthur DANJOU"
+    "welcome": "Hello, world!",
+    "ask": "Ask me anything about Yurier Herrera"
   },
   "tool": {
     "language": {
@@ -192,8 +195,8 @@
     "credits": {
       "made": "This site was designed with {nuxt} and then deployed via {cloudflare}",
       "heart": "Made with ❤️ and a lot of reflection.",
-      "chat": "A big thank you to {chat}, my personal assistant, always ready to answer your questions with clarity and speed.",
-      "copyrights": "© {year} Arthur Danjou - All rights reserved.",
+      "chat": "This conversational interface was built to make the portfolio easier to explore.",
+      "copyrights": "© {year} Yurier Herrera - All rights reserved.",
       "thank": "Thank you for visiting my portfolio.",
       "message": "Do not hesitate to leave a message, a suggestion, a remark or just a nice word - everything is welcome!",
       "tooltip": "My IA agent "
@@ -221,7 +224,7 @@
   "alert": "For lack of time, I did not have time to translate this content into English. Thank you for your understanding.",
   "post": {
     "footer": {
-      "thanks": "Thanks for reading! My name is {name}, and I love writing about AI, data science, and the intersection between mathematics and programming. {jump} I've been coding and exploring math for years, and I'm always learning something new—whether it's self-hosting tools in my homelab, experimenting with machine learning models, or diving into statistical methods. {jump} I share my knowledge here because I know how valuable clear, hands-on resources can be, especially when you're just getting started or exploring something deeply technical. {jump} If you have any questions or just want to chat, feel free to reach out to me on {linkedin} or {github  }. {jump} I hope you enjoyed this post and learned something useful. If you did, {comment}—it really helps and means a lot!",
+      "thanks": "Thanks for reading! My name is {name}, and I love writing about AI, data science, and the intersection between mathematics and programming. {jump} I've been coding and exploring math for years, and I'm always learning something new—whether it's self-hosting tools in my homelab, experimenting with machine learning models, or diving into statistical methods. {jump} I share my knowledge here because I know how valuable clear, hands-on resources can be, especially when you're just getting started or exploring something deeply technical. {jump} I hope you enjoyed this post and learned something useful. If you did, {comment}—it really helps and means a lot!",
       "comment": "consider sharing it"
     },
     "link": {

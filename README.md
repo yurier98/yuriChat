@@ -160,7 +160,7 @@ OPENWEATHER_API_KEY=your_openweather_api_key
 The project includes several API endpoints:
 
 - `/api/activity` - Discord activity status
-- `/api/stats` - WakaTime coding statistics  
+- `/api/stats` - WakaTime coding statistics
 - `/api/weather` - Weather information
 
 ## 📱 Features Overview

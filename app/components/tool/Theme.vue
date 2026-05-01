@@ -27,7 +27,7 @@ const { dark, toggleDark } = useTheme()
           <span class="text-xs text-muted">{{ t('tool.theme.light') }}</span>
           <USwitch
             v-model="dark"
-            color="neutral"
+            color="primary"
             size="lg"
             aria-label="switch theme"
             @click.prevent="toggleDark"

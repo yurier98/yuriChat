@@ -29,21 +29,7 @@ const year = ref(useNow().value.getFullYear())
       </template>
     </i18n-t>
     <p>{{ t('tool.credits.heart') }}</p>
-    <i18n-t keypath="tool.credits.chat" tag="p">
-      <template #chat>
-        <UTooltip
-          arrow
-          :content="{
-            position: 'bottom',
-            sideOffset: 0,
-          }"
-          :delay-duration="0"
-          :text="t('tool.credits.tooltip')"
-        >
-          <strong>ArtChat</strong>
-        </UTooltip>
-      </template>
-    </i18n-t>
+    <p>{{ t('tool.credits.chat') }}</p>
     <p>{{ t('tool.credits.thank') }}</p>
     <p>{{ t('tool.credits.message') }}</p>
     <i18n-t keypath="tool.credits.copyrights" tag="p">

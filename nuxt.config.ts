@@ -1,7 +1,7 @@
 import { definePerson } from 'nuxt-schema-org/schema'
 
 export default defineNuxtConfig({
-  compatibilityDate: '2025-10-19',
+  compatibilityDate: '2026-02-05',
 
   // Nuxt App
   app: {
@@ -19,17 +19,11 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   // Nuxt Modules
-  modules: [
-    '@nuxt/ui',
-    '@nuxtjs/seo',
-    '@nuxt/content',
-    '@vueuse/nuxt',
-    '@nuxtjs/google-fonts',
-    '@nuxt/image',
-    '@vueuse/motion/nuxt',
-    '@pinia/nuxt',
-    '@nuxtjs/i18n',
-  ],
+  modules: ['@nuxt/ui', '@nuxtjs/seo', '@nuxt/content', '@vueuse/nuxt', '@nuxtjs/google-fonts', '@nuxt/image', '@vueuse/motion/nuxt', '@pinia/nuxt', '@nuxtjs/i18n'],
+
+  icon: {
+    serverBundle: 'local',
+  },
 
   ogImage: {
     enabled: false,
@@ -46,31 +40,20 @@ export default defineNuxtConfig({
   schemaOrg: {
     identity: definePerson({
       // Basic Information, if applicable
-      name: 'Yurier Herrera ',
+      name: 'Yurier Herrera',
       givenName: 'Yurier',
       familyName: 'Herrera',
 
       // Profile Information, if applicable
-      image: '/arthur-pro.webp',
+      image: '/yurier.jpeg',
       description: 'AI researcher and technical author specializing in machine learning and neural networks',
       jobTitle: 'Principal AI Researcher',
-
-      // Contact & Social, if applicable
-      email: 'yurierjesus@gmail.com',
-      url: 'https://go.arthurdanjou.fr/website',
-      sameAs: [
-        'https://go.arthurdanjou.fr/twitter',
-        'https://go.arthurdanjou.fr/github',
-        'https://go.arthurdanjou.fr/linkedin',
-      ],
+      url: 'https://yurierherrera.nuxt.com',
     }),
   },
 
   // Nuxt Content
   content: {
-    preview: {
-      api: 'https://api.nuxt.studio',
-    },
     build: {
       markdown: {
         highlight: {
@@ -110,6 +93,7 @@ export default defineNuxtConfig({
   // Nuxt I18N
   i18n: {
     strategy: 'no_prefix',
+    baseUrl: 'https://yurierherrera.nuxt.com',
     locales: [
       {
         label: 'English',
@@ -151,6 +135,10 @@ export default defineNuxtConfig({
     cloudflare: {
       deployConfig: true,
       nodeCompat: true,
+    },
+    prerender: {
+      routes: ['/'],
+      crawlLinks: true,
     },
   },
 

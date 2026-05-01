@@ -18,7 +18,7 @@ export function useChat() {
       addMessage(
         ChatType.DUPLICATED,
         '',
-        ChatSender.ARTHUR,
+        ChatSender.ASSISTANT,
         [ChatFetchState.THINKING, ChatFetchState.DONE],
       )
       await new Promise(resolve => setTimeout(resolve, 700))
@@ -26,7 +26,7 @@ export function useChat() {
     addMessage(
       type,
       '',
-      ChatSender.ARTHUR,
+      ChatSender.ASSISTANT,
       fetchStates,
     )
   }

@@ -55,7 +55,6 @@ Crear un sistema que:
 - **Abdominales (Crunches)**
 - **Elevaciones de pierna**
 
-
 ## 🔮 Aplicaciones Futuras
 ### Rehabilitación Física
 * Monitoreo de ejercicios de terapia

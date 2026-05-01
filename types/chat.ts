@@ -29,7 +29,7 @@ export enum ChatState {
 
 export enum ChatSender {
   USER = 'user',
-  ARTHUR = 'arthur',
+  ASSISTANT = 'assistant',
 }
 
 export enum ChatFetchState {

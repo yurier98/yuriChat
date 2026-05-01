@@ -45,33 +45,32 @@ GoYRENT es una plataforma de software como servicio (SaaS) diseñada para gestio
 
 ## ⚒️ Tech Stack
 
-**Backend Framework** → [Django](https://www.djangoproject.com/)  
+**Backend Framework** → [Django](https://www.djangoproject.com/)
 Framework de Python de alto nivel para el desarrollo rápido y limpio del backend.
 
-**API Framework** → [Django REST Framework](https://www.django-rest-framework.org/)  
+**API Framework** → [Django REST Framework](https://www.django-rest-framework.org/)
 Toolkit flexible para construir APIs Web RESTful.
 
-**Frontend Framework** → [Nuxt.js](https://nuxt.com/)  
+**Frontend Framework** → [Nuxt.js](https://nuxt.com/)
 Framework full-stack sobre Vue.js para construir aplicaciones universales y SPA.
 
-**Containerization** → [Docker](https://www.docker.com/)  
+**Containerization** → [Docker](https://www.docker.com/)
 Plataforma para empaquetar, distribuir y ejecutar aplicaciones en contenedores.
 
-**Architecture** → Microservicios  
+**Architecture** → Microservicios
 Arquitectura que estructura una aplicación como una colección de servicios débilmente acoplados.
 
-**Database** → [PostgreSQL](https://www.postgresql.org/)  
+**Database** → [PostgreSQL](https://www.postgresql.org/)
 Sistema de base de datos objeto-relacional de código abierto.
 
-**Caching** → [Redis](https://redis.io/)  
+**Caching** → [Redis](https://redis.io/)
 Almacén de estructura de datos en memoria, usado como base de datos, caché y agente de mensajes.
 
-**Task Queue** → [Celery](https://docs.celeryq.dev/)  
+**Task Queue** → [Celery](https://docs.celeryq.dev/)
 Sistema de cola de tareas distribuida basada en paso de mensajes.
 
-**Authentication** → JWT  
+**Authentication** → JWT
 JSON Web Tokens para autenticación stateless y segura.
-
 
 ![GoYRENT](/projects/goyrent/GoYRENT_Dashboard_1.webp)
 ![GoYRENT](/projects/goyrent/Toolbar.webp)

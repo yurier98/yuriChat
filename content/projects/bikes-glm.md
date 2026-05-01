@@ -12,7 +12,5 @@ tags:
 
 The project was done as part of the course `Generalised Linear Model` at the Paris-Dauphine PSL University. The goal of the project is to determine the best model that predicts/explains the number of bicycle rentals, based on various characteristics of the day (temperature, humidity, wind speed, etc.).
 
-You can find the code here: [GLM Bikes Code](https://go.arthurdanjou.fr/glm-bikes-code)
-
 <iframe src="/projects/bikes-glm/Report.pdf" width="100%" height="1000px">
 </iframe>

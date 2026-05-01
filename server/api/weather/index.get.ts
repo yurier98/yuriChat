@@ -17,7 +17,7 @@ export default defineCachedEventHandler(async (event) => {
     temp_max: Math.round(response.main.temp_max),
     humidity: response.main.humidity,
     wind: response.wind.speed,
-    description: response.weather[0].description,
+    description: response.weather?.[0]?.description ?? '',
   }
 
   return weather

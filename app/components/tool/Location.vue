@@ -1,11 +1,8 @@
 <script setup lang="ts">
 import type { LocationResponse } from '~~/types'
 
-const { data: location, error, pending } = await $fetch<LocationResponse>('/api/location').catch(() => ({
-  data: null,
-  error: true,
-  pending: false,
-}))
+const location = ref<LocationResponse | null>(null)
+const pending = ref(true)
 
 // Fallback data in case API fails
 const fallbackLocation: LocationResponse = {
@@ -42,7 +39,17 @@ const fallbackLocation: LocationResponse = {
   }),
 }
 
-const locationData = location || fallbackLocation
+const locationData = computed(() => location.value ?? fallbackLocation)
+
+try {
+  location.value = await $fetch<LocationResponse>('/api/location')
+}
+catch {
+  location.value = null
+}
+finally {
+  pending.value = false
+}
 </script>
 
 <template>

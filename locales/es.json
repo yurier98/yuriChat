@@ -1,6 +1,9 @@
 {
   "main": {
     "question": "¡Genial! Háblame un poco más sobre ti.",
+    "intro": "Soy Yurier Herrera, desarrollador full-stack y project manager de TI enfocado en crear productos digitales útiles y bien cuidados.",
+    "visitor": "Hola Yurier, muéstrame lo que haces.",
+    "ready": "Claro. Puedes empezar por mis proyectos o artículos, o abrir el dock de mensajes para preguntarme cualquier otra cosa. {links}",
     "about": "Soy desarrollador Full-Stack y Project Manager con más de 5 años de experiencia liderando la concepción y entrega de soluciones digitales de alto impacto.{space} Experto en armonizar la excelencia técnica en el desarrollo (Django, APIs REST) con los principios de la gestión de proyectos (SCRUM, PMBOK) y el diseño centrado en el usuario (UX/UI). Capacidad demostrada para dirigir equipos multidisciplinarios en la creación de productos escalables para web y móvil, desde la ideación hasta el lanzamiento. Actualmente enfocado en la vanguardia tecnológica, con pasión por la Inteligencia Artificial, aplicando conocimientos en Visión por Computadora (CV), HCI (Interacción Humano-Computadora) y arquitecturas RAG para crear soluciones innovadoras. .{space} Accede directamente a otras páginas: {links}",
     "powered": "Impulsado por Nuxt"
   },
@@ -15,15 +18,15 @@
       "placeholder": "Usa las teclas de flecha para navegar por las sugerencias preestablecidas. Presione Entrar para enviar el mensaje.",
       "send": "Enviar un mensaje",
       "sending": "Enviando...",
-      "chat": "Regresar al chat",
-      "projects": "Ver proyectos",
-      "writings": "Ver artículos"
+      "chat": "Ir al chat",
+      "projects": "Proyectos",
+      "writings": "Artículos"
     },
     "tooltip": {
       "send": "Enviar un nuevo mensaje predefinido",
       "clear": "Eliminar todos los mensajes",
       "theme": "Cambiar el tema",
-      "language": "Cambiar la language",
+      "language": "Cambiar el idioma",
       "chat": "Vuelve al chat para reanudar la conversación",
       "projects": "Descubre otros proyectos",
       "writings": "Leer más artículos",
@@ -32,7 +35,7 @@
   },
   "command": {
     "actions": "Componentes",
-    "arthur": "Más sobre Yurier Herrera",
+    "about_person": "Más sobre Yurier Herrera",
     "interface": "Cambiar la interfaz",
     "theme": {
       "label": "Cambiar tema",
@@ -120,7 +123,7 @@
       "done": "¡Hecho!",
       "checking": "Comprobación del currículum ..."
     },
-    "welcome": "Bienvenido a YuriChat",
+    "welcome": "Hola mundo!",
     "ask": "Pregúntame cualquier cosa sobre Yurier Herrera"
   },
   "tool": {
@@ -184,7 +187,7 @@
     "credits": {
       "made": "Este sitio fue diseñado con {nuxt} y luego se implementó a través de {cloudflare}",
       "heart": "Hecho con ❤️ y mucha reflexión.",
-      "chat": "Muchas gracias a arthurdanjou, por inspirarme con su asistente personal.",
+      "chat": "Esta interfaz conversacional fue creada para que el portafolio sea más fácil de explorar.",
       "copyrights": "© {year} Yurier Herrera - Todos los derechos reservados.",
       "thank": "Gracias por visitar mi cartera.",
       "message": "No dude en dejar un mensaje, una sugerencia, un comentario o simplemente una buena palabra: ¡todo es bienvenido!",
@@ -223,7 +226,7 @@
   },
   "post": {
     "footer": {
-      "thanks": "¡Gracias por leer! Me llamo {name} y me encanta escribir sobre inteligencia artificial, ciencia de datos y todo lo que se encuentra en la intersección entre las matemáticas y la programación. {jump} Llevo años programando y explorando las matemáticas, y cada día aprendo algo nuevo — ya sea autoalojando herramientas en mi homelab, experimentando con modelos de aprendizaje automático o profundizando en métodos estadísticos. {jump} Comparto mis conocimientos aquí porque sé lo valiosos que pueden ser los recursos claros, prácticos y accesibles, especialmente cuando uno está empezando o explorando temas técnicos en profundidad. {jump} Si tienes alguna pregunta o simplemente quieres charlar, no dudes en dejar un comentario abajo o contactarme por {linkedin} o {github}. {jump} Espero que este artículo te haya gustado y que hayas aprendido algo útil. Si es así, {comment} — ¡me ayuda mucho y significa mucho para mí!",
+      "thanks": "¡Gracias por leer! Me llamo {name} y me encanta escribir sobre inteligencia artificial, ciencia de datos y todo lo que se encuentra en la intersección entre las matemáticas y la programación. {jump} Llevo años programando y explorando las matemáticas, y cada día aprendo algo nuevo — ya sea autoalojando herramientas en mi homelab, experimentando con modelos de aprendizaje automático o profundizando en métodos estadísticos. {jump} Comparto mis conocimientos aquí porque sé lo valiosos que pueden ser los recursos claros, prácticos y accesibles, especialmente cuando uno está empezando o explorando temas técnicos en profundidad. {jump} Espero que este artículo te haya gustado y que hayas aprendido algo útil. Si es así, {comment} — ¡me ayuda mucho y significa mucho para mí!",
       "comment": "considera compartirlo"
     },
     "link": {
