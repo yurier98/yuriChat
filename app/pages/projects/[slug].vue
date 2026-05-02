@@ -2,8 +2,20 @@
 import { useDateFormat } from '#imports'
 
 const route = useRoute()
-const { data: project } = await useAsyncData(`projects/${route.params.slug}`, () =>
-  queryCollection('projects').path(`/projects/${route.params.slug}`).first())
+const { t, locale } = useI18n({ useScope: 'global' })
+const { data: projectVersions } = await useAsyncData(`projects/${route.params.slug}`, async () => {
+  const projects = await queryCollection('projects').all()
+  const routePath = `/projects/${String(route.params.slug)}`
+
+  return projects.filter(project => project.slug === String(route.params.slug) || project.path === routePath)
+})
+
+const activeLanguage = computed(() => locale.value === 'es' ? 'es' : 'en')
+const project = computed(() => {
+  return projectVersions.value?.find(project => project.locale === activeLanguage.value)
+    || projectVersions.value?.find(project => !project.locale)
+    || projectVersions.value?.[0]
+})
 
 if (!project.value) {
   throw createError({
@@ -12,15 +24,13 @@ if (!project.value) {
   })
 }
 
+useSeoMeta(() => project.value?.seo || {})
+
 useSeoMeta({
-  title: project.value?.title,
-  description: project.value?.description,
+  title: () => project.value?.title,
+  description: () => project.value?.description,
   author: 'Yurier Herrera',
 })
-
-const { t } = useI18n({ useScope: 'global' })
-
-useSeoMeta(project.value.seo || {})
 </script>
 
 <template>

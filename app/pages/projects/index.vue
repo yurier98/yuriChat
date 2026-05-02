@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const { t } = useI18n({ useScope: 'global' })
+const { t, locale } = useI18n({ useScope: 'global' })
 useSeoMeta({
   title: 'My Projects',
   description: t('projects.description'),
@@ -11,6 +11,27 @@ const { data: projects } = await useAsyncData('all-projects', () => {
     .order('publishedAt', 'DESC')
     .all()
 })
+
+const activeLanguage = computed(() => locale.value === 'es' ? 'es' : 'en')
+const localizedProjects = computed(() => {
+  const bySlug = new Map<string, any[]>()
+
+  for (const project of projects.value || []) {
+    const entries = bySlug.get(project.slug) || []
+    entries.push(project)
+    bySlug.set(project.slug, entries)
+  }
+
+  return Array.from(bySlug.values()).map((entries) => {
+    return entries.find(project => project.locale === activeLanguage.value)
+      || entries.find(project => !project.locale)
+      || entries[0]
+  })
+})
+
+function projectRoute(project: any) {
+  return project.locale ? `/projects/${project.slug}` : project.path
+}
 </script>
 
 <template>
@@ -22,9 +43,9 @@ const { data: projects } = await useAsyncData('all-projects', () => {
     <PostAlert class="font-bold" />
     <ul class="grid grid-cols-1 sm:grid-cols-2 gap-8">
       <NuxtLink
-        v-for="(project, id) in projects"
+        v-for="(project, id) in localizedProjects"
         :key="id"
-        :to="project.path"
+        :to="projectRoute(project)"
         class="group block h-full rounded-[1.5rem] focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500/25"
       >
         <li

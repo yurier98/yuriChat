@@ -1,5 +1,6 @@
 ---
 slug: todo4vcode
+locale: es
 title: ToDo4VCode
 description: Extensión de gestión de tareas para VS Code y editores compatibles, creada para planificar, priorizar y conectar tareas con el código sin salir del entorno de desarrollo.
 publishedAt: 2025/12/31

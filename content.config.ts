@@ -6,9 +6,10 @@ export default defineContentConfig({
     projects: defineCollection(
       asSeoCollection({
         type: 'page',
-        source: 'projects/*.md',
+        source: 'projects/**/*.md',
         schema: z.object({
           slug: z.string(),
+          locale: z.enum(['en', 'es']).optional(),
           title: z.string(),
           description: z.string(),
           publishedAt: z.string(),
