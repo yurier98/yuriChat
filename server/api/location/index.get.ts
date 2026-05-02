@@ -17,11 +17,11 @@ export default defineCachedEventHandler(async () => {
     founded: 2002,
     type: 'Universidad Pública',
     specialties: [
-      'Ciencias de la Computación',
-      'Ingeniería Informática',
-      'Ciberseguridad',
-      'Inteligencia Artificial',
+      'Ingeniería en Ciencias de Informáticas',
+      'Ingeniería en Bioinformática',
       'Desarrollo de Software',
+      'Inteligencia Artificial',
+      'Ingeniería en Ciberseguridad',
     ],
     timezone: 'America/Havana',
     currentTime: new Date().toLocaleString('es-CU', {
