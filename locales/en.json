@@ -1,7 +1,7 @@
 {
   "main": {
     "question": "Awesome! Tell me a bit more about you.",
-    "intro": "I'm Yurier Herrera, a full-stack developer and IT project manager focused on useful, polished digital products.",
+    "intro": "I'm Yurier Herrera, a Full-Stack developer, Designer, and IT Project Manager focused on useful, polished digital products.",
     "visitor": "Hi Yurier, show me what you do.",
     "ready": "Of course. Start with my projects or writings, or open the message dock to ask about anything else. {links}",
     "about": "I am a second-year Master's student in Mathematics and Applications, specializing in Statistical Engineering and Finance – Data Science, at Université Paris-Dauphine PSL in France. I focus on applied statistics, modeling, and data science, with a strong interest in data analysis, algorithms, and software implementation, aiming to contribute to practical applications of artificial intelligence in today's world. {space} With my mathematical background and understanding of emerging technologies, I am able to grasp theoretical concepts and design effective solutions in a rapidly growing field. {space} Access other pages directly: {links}",

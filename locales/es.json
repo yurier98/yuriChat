@@ -1,7 +1,7 @@
 {
   "main": {
     "question": "¡Genial! Háblame un poco más sobre ti.",
-    "intro": "Soy Yurier Herrera, desarrollador full-stack y project manager de TI enfocado en crear productos digitales útiles y bien cuidados.",
+    "intro": "Soy Yurier Herrera, desarrollador Full-Stack, diseñador y Project Manager de TI enfocado en crear productos digitales útiles y bien cuidados.",
     "visitor": "Hola Yurier, muéstrame lo que haces.",
     "ready": "Claro. Puedes empezar por mis proyectos o artículos, o abrir el dock de mensajes para preguntarme cualquier otra cosa. {links}",
     "about": "Soy desarrollador Full-Stack y Project Manager con más de 5 años de experiencia liderando la concepción y entrega de soluciones digitales de alto impacto.{space} Experto en armonizar la excelencia técnica en el desarrollo (Django, APIs REST) con los principios de la gestión de proyectos (SCRUM, PMBOK) y el diseño centrado en el usuario (UX/UI). Capacidad demostrada para dirigir equipos multidisciplinarios en la creación de productos escalables para web y móvil, desde la ideación hasta el lanzamiento. Actualmente enfocado en la vanguardia tecnológica, con pasión por la Inteligencia Artificial, aplicando conocimientos en Visión por Computadora (CV), HCI (Interacción Humano-Computadora) y arquitecturas RAG para crear soluciones innovadoras. .{space} Accede directamente a otras páginas: {links}",
