@@ -5,7 +5,7 @@ description: Sistema de conteo automático de repeticiones de ejercicios mediant
 publishedAt: 2024/09/14
 readingTime: 5
 cover: fitness-counter/cover.webp
-favorite: true
+favorite: false
 tags:
   - AI
   - Computer Vision

@@ -2,7 +2,7 @@
 slug: gapid
 title: GAPID
 description: Plataforma para la Gestión de Programas y Proyectos de Ciencia Tecnología e Innovación.
-publishedAt: 2025/09/04
+publishedAt: 2024/01/28
 readingTime: 2
 cover: gapid/cover.gif
 favorite: true
