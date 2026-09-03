@@ -2,7 +2,7 @@ import process from 'node:process'
 import { definePerson } from 'nuxt-schema-org/schema'
 
 const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://yurier98.github.io'
-const nitroPreset = process.env.NITRO_PRESET || 'static'
+const nitroPreset = process.env.NITRO_PRESET || 'vercel'
 
 export default defineNuxtConfig({
   compatibilityDate: '2026-02-05',
@@ -23,7 +23,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   // Nuxt Modules
-  modules: ['@nuxt/ui', '@nuxtjs/seo', '@nuxt/content', '@vueuse/nuxt', '@nuxtjs/google-fonts', '@nuxt/image', '@vueuse/motion/nuxt', '@pinia/nuxt', '@nuxtjs/i18n'],
+  modules: ['@nuxt/ui', '@nuxtjs/seo', '@nuxt/content', 'nuxt-studio', '@vueuse/nuxt', '@nuxtjs/google-fonts', '@nuxt/image', '@vueuse/motion/nuxt', '@pinia/nuxt', '@nuxtjs/i18n'],
 
   icon: {
     serverBundle: 'local',
@@ -148,6 +148,11 @@ export default defineNuxtConfig({
       routes: ['/'],
       crawlLinks: true,
     },
+  },
+
+  studio: {
+    // repository auto-detected from VERCEL_GIT_* env vars when deployed via Git
+    repository: { provider: 'github', owner: 'yurier98', repo: 'yuriChat', branch: 'main' },
   },
 
   // Nuxt Env
