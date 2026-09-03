@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+import { Analytics } from '@vercel/analytics/vue'
+import { SpeedInsights } from '@vercel/speed-insights/vue'
+
 useHead({
   link: [{ rel: 'icon', type: 'image/webp', href: '/favicon.webp' }],
 })
@@ -45,6 +48,8 @@ const head = useLocaleHead()
       }"
     />
     <NuxtPage />
+    <Analytics />
+    <SpeedInsights />
   </UApp>
 </template>
 
