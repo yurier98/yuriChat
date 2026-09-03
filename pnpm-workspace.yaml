@@ -1,3 +1,10 @@
+minimumReleaseAgeExcludePrune: true
+trustPolicy: no-downgrade
+shellEmulator: true
+
+overrides:
+  zod: 3.25.76
+
 ignoredBuiltDependencies:
   - '@parcel/watcher'
   - esbuild
@@ -5,5 +12,6 @@ ignoredBuiltDependencies:
   - unrs-resolver
   - vue-demi
   - workerd
+
 onlyBuiltDependencies:
   - better-sqlite3
