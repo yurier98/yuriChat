@@ -31,8 +31,8 @@ function createSimpleTimeUnit(unit: string): TimeUnit {
 export const activityMessages: Record<'en' | 'fr' | 'es', ActivityMessages> = {
   en: {
     justNow: 'just now',
-    past: (n: string) => n.match(/\d/) ? `${n} ago` : n,
-    future: (n: string) => n.match(/\d/) ? `in ${n}` : n,
+    past: (n: string) => /\d/.test(n) ? `${n} ago` : n,
+    future: (n: string) => /\d/.test(n) ? `in ${n}` : n,
     month: createTimeUnit('month', 'months'),
     year: createTimeUnit('year', 'years'),
     day: createTimeUnit('day', 'days', 'yesterday', 'tomorrow'),
@@ -44,8 +44,8 @@ export const activityMessages: Record<'en' | 'fr' | 'es', ActivityMessages> = {
   },
   fr: {
     justNow: 'à l\'instant',
-    past: (n: string) => n.match(/\d/) ? `il y a ${n}` : n,
-    future: (n: string) => n.match(/\d/) ? `dans ${n}` : n,
+    past: (n: string) => /\d/.test(n) ? `il y a ${n}` : n,
+    future: (n: string) => /\d/.test(n) ? `dans ${n}` : n,
     month: (n: number, past = true) => n === 1 ? (past ? 'le mois dernier' : 'le mois prochain') : `${n} mois`,
     year: (n: number, past = true) => n === 1 ? (past ? 'l\'année dernière' : 'l\'année prochaine') : `${n} ans`,
     day: (n: number, past = true) => n === 1 ? (past ? 'hier' : 'demain') : `${n} jours`,
@@ -57,8 +57,8 @@ export const activityMessages: Record<'en' | 'fr' | 'es', ActivityMessages> = {
   },
   es: {
     justNow: 'justo ahora',
-    past: (n: string) => n.match(/\d/) ? `hace ${n}` : n,
-    future: (n: string) => n.match(/\d/) ? `dentro de ${n}` : n,
+    past: (n: string) => /\d/.test(n) ? `hace ${n}` : n,
+    future: (n: string) => /\d/.test(n) ? `dentro de ${n}` : n,
     month: (n: number, past = true) => n === 1 ? (past ? 'el mes pasado' : 'el próximo mes') : `${n} meses`,
     year: (n: number, past = true) => n === 1 ? (past ? 'el año pasado' : 'el próximo año') : `${n} años`,
     day: (n: number, past = true) => n === 1 ? (past ? 'ayer' : 'mañana') : `${n} días`,
