@@ -5,7 +5,7 @@ const { t } = useI18n({ useScope: 'global' })
 <template>
   <UCard class="mt-8 shadow-sm bg-white dark:bg-neutral-900">
     <img
-      src="/yurier.jpeg"
+      src="/yurier.webp"
       alt="Yurier Herrera"
       class="w-24 h-24 rounded-full object-cover float-left mr-4 mb-4"
     >

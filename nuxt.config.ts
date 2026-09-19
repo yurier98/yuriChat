@@ -53,7 +53,7 @@ export default defineNuxtConfig({
       familyName: 'Herrera',
 
       // Profile Information, if applicable
-      image: '/yurier.jpeg',
+      image: '/yurier.webp',
       description: 'AI researcher and technical author specializing in machine learning and neural networks',
       jobTitle: 'Principal AI Researcher',
       url: siteUrl,

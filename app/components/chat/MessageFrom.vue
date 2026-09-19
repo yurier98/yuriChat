@@ -58,7 +58,7 @@ const hasDynamicComponent = computed(() => Boolean(dynamicComponent.value))
   <div class="group space-y-2 duration-200">
     <div class="flex items-end gap-2.5">
       <img
-        src="/yurier.jpeg"
+        src="/yurier.webp"
         alt="Yurier Herrera"
         class="h-10 w-10 shrink-0 rounded-full object-cover shadow-[0_8px_22px_rgba(0,0,0,0.14)] ring-2 ring-white/80 dark:ring-white/10"
       >
