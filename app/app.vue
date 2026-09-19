@@ -20,7 +20,11 @@ useHead({
 
 // Single static share image (public/og.png), served with an ABSOLUTE url
 // because social crawlers ignore relative image paths.
-const ogImage = `${useRequestURL().origin}/og.png`
+//
+// Use the CONFIGURED site url, not `useRequestURL()`: the site is prerendered
+// (nitro.prerender.crawlLinks), so there is no request at build time and the
+// origin resolved to "http://localhost" in production.
+const ogImage = `${useSiteConfig().url}/og.png`
 
 useSeoMeta({
   // nuxt-seo-utils appends "• <site.name>" to every title, and site.name is
