@@ -47,6 +47,11 @@ export default defineNuxtConfig({
   },
 
   schemaOrg: {
+    // The JSON-LD graph is ~2KB unminified, which makes unhead warn about the
+    // inline script and ships dead bytes on every page. Google requires
+    // structured data to be INLINE (an external .jsonld file is not supported),
+    // so minifying is the only lever available.
+    minify: true,
     identity: definePerson({
       // Basic Information, if applicable
       name: 'Yurier Herrera',

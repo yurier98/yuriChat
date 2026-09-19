@@ -19,9 +19,10 @@ useSeoMeta({
   ogImageWidth: 1200,
   ogImageHeight: 630,
   ogImageAlt: 'Yurier Herrera — Software Engineer & Entrepreneur',
-  twitterCard: 'summary_large_image',
-  twitterImage: ogImage,
-  twitterImageAlt: 'Yurier Herrera — Software Engineer & Entrepreneur',
+  // No twitter:* tags on purpose: unhead deprecates them ("use Open Graph
+  // metadata instead") and the app already sets `automaticTwitterTags: false`.
+  // X falls back to og:image. Add back only `twitterCard: 'summary_large_image'`
+  // if the large-image card on X is worth the dev-only deprecation warning.
 })
 
 const route = useRoute()
