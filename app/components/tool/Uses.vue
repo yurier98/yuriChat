@@ -16,7 +16,7 @@ const { data: categoryData } = await useAsyncData(`category-${props.category}`, 
   <section>
     <div v-if="items && categoryData" class="space-y-4">
       <USeparator
-        :label="locale === 'en' ? categoryData.name.en : locale === 'es' ? categoryData.name.es : categoryData.name.fr"
+        :label="locale === 'en' ? categoryData.name.en : categoryData.name.es"
         size="xs"
       />
       <ul class="space-y-8">
@@ -25,7 +25,7 @@ const { data: categoryData } = await useAsyncData(`category-${props.category}`, 
             {{ item.name }}
           </p>
           <p class="text-sm">
-            {{ locale === 'en' ? item.description.en : locale === 'es' ? item.description.es : item.description.fr }}
+            {{ locale === 'en' ? item.description.en : item.description.es }}
           </p>
         </li>
       </ul>

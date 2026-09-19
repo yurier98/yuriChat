@@ -42,7 +42,7 @@ export default defineNuxtConfig({
 
   site: {
     url: siteUrl,
-    name: 'Developer enjoying Artificial Intelligence and Machine Learning. Mathematics Student at Paris Dauphine-PSL University specialised in Statistics and Data Science.',
+    name: 'Software engineer and entrepreneur building user-centered digital products with AI and automation.',
   },
 
   schemaOrg: {
@@ -54,8 +54,8 @@ export default defineNuxtConfig({
 
       // Profile Information, if applicable
       image: '/profile.webp',
-      description: 'AI researcher and technical author specializing in machine learning and neural networks',
-      jobTitle: 'Principal AI Researcher',
+      description: 'Software engineer and entrepreneur building user-centered digital products with AI and automation.',
+      jobTitle: 'Software Engineer & Entrepreneur',
       url: siteUrl,
     }),
   },

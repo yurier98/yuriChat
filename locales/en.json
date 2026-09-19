@@ -1,10 +1,10 @@
 {
   "main": {
     "question": "Awesome! Tell me a bit more about you.",
-    "intro": "I'm Yurier Herrera, a Full-Stack developer, Designer, and IT Project Manager focused on useful, polished digital products.",
+    "intro": "I'm Yurier Herrera, a software engineer and entrepreneur.{space} I design and build digital products with an obsession for user experience, and I apply artificial intelligence and automation to transform processes.{space} I taught Software Engineering and Project Management, and I'm open to collaborating with companies and entrepreneurs on new products and solutions.",
     "visitor": "Hi Yurier, show me what you do.",
     "ready": "Of course. Start with my projects or writings, or open the message dock to ask about anything else. {links}",
-    "about": "I am a second-year Master's student in Mathematics and Applications, specializing in Statistical Engineering and Finance – Data Science, at Université Paris-Dauphine PSL in France. I focus on applied statistics, modeling, and data science, with a strong interest in data analysis, algorithms, and software implementation, aiming to contribute to practical applications of artificial intelligence in today's world. {space} With my mathematical background and understanding of emerging technologies, I am able to grasp theoretical concepts and design effective solutions in a rapidly growing field. {space} Access other pages directly: {links}",
+    "about": "I'm Yurier Herrera, a software engineer and entrepreneur. I taught Software Engineering and Project Management at the Universidad de las Ciencias Informáticas, and today I design and build digital products with a strong obsession for user experience.{space} I combine technical excellence (Django, REST APIs, web and mobile) with project management (SCRUM, PMBOK), and I apply artificial intelligence and automation to transform processes in companies and organizations. I'm open to collaborating with companies and other entrepreneurs on new solutions and products.{space} Access other pages directly: {links}",
     "powered": "Powered by Nuxt"
   },
   "palette": {
@@ -122,7 +122,7 @@
       "change": "Change language",
       "response": {
         "control": "I added the language switch control above so you can switch directly.",
-        "choose": "Choose English, French, or Spanish",
+        "choose": "Choose English or Spanish",
         "kbd": "Press {kbd} on your keyboard"
       }
     },
@@ -130,8 +130,8 @@
       "offline": "I'm currently offline. Come back later to see what I'm working on. {maths}",
       "working": "I'm actually online! Check what I'm working on just below.",
       "idling": "I'm idling on my computer with {editor} running in background.",
-      "maths": "I am probably doing some maths or sleeping.",
-      "response": "The statistics are powered and saved by WakaTime.",
+      "maths": "I'm probably coding or thinking about a new product.",
+      "response": "What I'm working on right now:",
       "tooltip": {
         "online": "I'm online 👋",
         "offline": "I'm offline 🫥",
@@ -182,11 +182,11 @@
       }
     },
     "projects": {
-      "main": "A selection of my projects developed in R, Python, and web development, covering diverse areas such as data analysis, machine learning, and web applications. These projects highlight my skills in coding, problem-solving, and solution design. {space}Here, I present the three projects I am most proud of, but you can explore all my projects directly in the {projects} page.",
+      "main": "A selection of my software projects: web and mobile applications, tools, and artificial intelligence experiments.{space} Here I show the three projects I'm most proud of, but you can explore all my projects directly on the {projects} page.",
       "link": "Projects"
     },
     "writings": {
-      "main": "I share my reflections on mathematics, artificial intelligence, development and my passions, by organizing them to follow the evolution of my ideas and projects. {space}Here you will find the two most recent articles, but all my writings are accessible in the {writings} page, to explore my universe more in depth, Maths and AI.",
+      "main": "I share my thoughts on software development, artificial intelligence, product and entrepreneurship, organised so you can follow the evolution of my ideas and projects.{space} Here you'll find the two most recent articles, but all my writings are on the {writings} page.",
       "link": "Articles"
     },
     "hobbies": "Outside of programming and my technical projects, I dedicate much of my free time to my passions: sports, music, traveling, and spending time with friends. Sports teach me discipline and perseverance, music fuels my creativity, and traveling opens me up to new cultures and ways of thinking, which also nurtures my intellectual curiosity.\nThese passions help me maintain balance and strengthen the qualities I bring to both my studies and my career: curiosity, commitment, autonomy, and a constant desire to improve. They make me someone who is motivated, adaptable, and always ready to take on new challenges.",
@@ -200,17 +200,16 @@
       "tooltip": "My IA agent "
     },
     "resume": {
-      "main": "Below are two versions of my résumé: one in French and one in English, tailored to suit different academic and professional contexts. {space} Feel free to choose the one that best fits your needs by clicking the corresponding button.",
+      "main": "Here is my résumé. You can download it as a PDF:",
       "uploaded": "Uploaded",
       "files": {
         "en": "English version",
-        "fr": "French version",
         "pdf": "PDF file"
       }
     },
-    "skills": "As a software engineer and mathematics student, I combine scientific rigor with technical pragmatism to design solutions tailored to the challenges of data and mathematical projects. My approach focuses on a deep understanding of needs, from data preparation to deployment, while emphasizing modeling and performance optimization.Passionate about artificial intelligence and data science, I strive to balance innovation with statistical robustness. Always eager to learn, I explore both technological advancements and entrepreneurial or financial challenges. Curious and enthusiastic, I enjoy sharing knowledge and discovering new concepts, whether in theorems or emerging technologies.",
+    "skills": "These are the technologies and tools I work with, along with the methodologies and skills I apply when leading projects: programming languages, web and mobile development, backend, DevOps, project management and soft skills.",
     "experiences": {
-      "main": "Throughout my journey, I've had the opportunity to contribute to various projects — from student jobs and summer internships to self-taught experiences.\nEach one has deepened my practical understanding and strengthened my skills in statistics, software development, and data management, while exposing me to a range of technical environments.\nThey also taught me to work effectively in a team, while developing strong autonomy and adaptability.",
+      "main": "Throughout my journey I've contributed to many projects — from university teaching and project management to software development and self-taught work.\nEach stage has strengthened my technical and management skills across very different environments.\nThey also taught me to work effectively in a team, with strong autonomy and adaptability.",
       "today": "Today"
     },
     "education": {
@@ -228,7 +227,7 @@
   "alert": "For lack of time, I did not have time to translate this content into English. Thank you for your understanding.",
   "post": {
     "footer": {
-      "thanks": "Thanks for reading! My name is {name}, and I love writing about AI, data science, and the intersection between mathematics and programming. {jump} I've been coding and exploring math for years, and I'm always learning something new—whether it's self-hosting tools in my homelab, experimenting with machine learning models, or diving into statistical methods. {jump} I share my knowledge here because I know how valuable clear, hands-on resources can be, especially when you're just getting started or exploring something deeply technical. {jump} I hope you enjoyed this post and learned something useful. If you did, {comment}—it really helps and means a lot!",
+      "thanks": "Thanks for reading! My name is {name} and I love writing about artificial intelligence, software development and product. {jump} I've been coding and building products for years, and I learn something new every day. {jump} I share what I learn here because clear, hands-on resources matter. {jump} I hope you found this useful. If you did, {comment} — it really helps!",
       "comment": "consider sharing it"
     },
     "link": {
@@ -238,13 +237,22 @@
     "top": "Go to top"
   },
   "writings": {
-    "description": "All my reflections on programming, mathematics, the conception of artificial intelligence, etc., are put in chronological order.",
-    "title": "Writings on math, artificial intelligence, development, and my passions.",
+    "description": "All my reflections on programming, artificial intelligence, product and entrepreneurship are put in chronological order.",
+    "title": "Writings on software development, artificial intelligence, product and entrepreneurship.",
     "back": "Return to the writings"
   },
   "projects": {
-    "description": "A collection of my projects using R, Python, or web development technologies. These projects span various domains, including data analysis, machine learning, and web applications, showcasing my skills in coding, problem-solving, and project development.",
+    "description": "A collection of my projects using Python or web development technologies. These projects span various domains, including artificial intelligence and web applications, showcasing my skills in coding, problem-solving, and project development.",
     "title": "All my projects I have worked on, both academic and personal",
     "back": "Return to projects"
+  },
+  "share": {
+    "label": "Share",
+    "x": "Share on X",
+    "linkedin": "Share on LinkedIn",
+    "whatsapp": "Share on WhatsApp",
+    "telegram": "Share on Telegram",
+    "copy": "Copy link",
+    "copied": "Link copied!"
   }
 }

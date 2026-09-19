@@ -5,7 +5,7 @@ export function useLanguage() {
   async function changeLocale(newLocale: string) {
     if (!supportedLocales.has(newLocale))
       return
-    await setLocale(newLocale as 'en' | 'fr' | 'es')
+    await setLocale(newLocale as 'en' | 'es')
   }
 
   return {

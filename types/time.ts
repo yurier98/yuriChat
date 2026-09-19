@@ -28,7 +28,7 @@ function createSimpleTimeUnit(unit: string): TimeUnit {
   return (n: number) => `${n} ${unit}${n > 1 ? 's' : ''}`
 }
 
-export const activityMessages: Record<'en' | 'fr' | 'es', ActivityMessages> = {
+export const activityMessages: Record<'en' | 'es', ActivityMessages> = {
   en: {
     justNow: 'just now',
     past: (n: string) => /\d/.test(n) ? `${n} ago` : n,
@@ -40,19 +40,6 @@ export const activityMessages: Record<'en' | 'fr' | 'es', ActivityMessages> = {
     hour: createSimpleTimeUnit('hour'),
     minute: createSimpleTimeUnit('minute'),
     second: createSimpleTimeUnit('second'),
-    invalid: '',
-  },
-  fr: {
-    justNow: 'à l\'instant',
-    past: (n: string) => /\d/.test(n) ? `il y a ${n}` : n,
-    future: (n: string) => /\d/.test(n) ? `dans ${n}` : n,
-    month: (n: number, past = true) => n === 1 ? (past ? 'le mois dernier' : 'le mois prochain') : `${n} mois`,
-    year: (n: number, past = true) => n === 1 ? (past ? 'l\'année dernière' : 'l\'année prochaine') : `${n} ans`,
-    day: (n: number, past = true) => n === 1 ? (past ? 'hier' : 'demain') : `${n} jours`,
-    week: (n: number, past = true) => n === 1 ? (past ? 'la semaine dernière' : 'la semaine prochaine') : `${n} semaines`,
-    hour: createSimpleTimeUnit('heure'),
-    minute: createSimpleTimeUnit('minute'),
-    second: createSimpleTimeUnit('seconde'),
     invalid: '',
   },
   es: {

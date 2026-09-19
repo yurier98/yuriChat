@@ -1,173 +1,113 @@
 {
   "body": [
     {
-      "id": "programmation",
-      "name": {
-        "en": "Programming",
-        "fr": "Programmation",
-        "es": "Programación"
-      },
+      "id": "languages",
+      "name": { "en": "Programming Languages", "es": "Lenguajes de programación" },
       "items": [
-        {
-          "name": "TypeScript",
-          "icon": "i-logos-typescript-icon"
-        },
-        {
-          "name": "JavaScript",
-          "icon": "i-logos-javascript"
-        },
-        {
-          "name": "HTML5",
-          "icon": "i-logos-html-5"
-        },
-        {
-          "name": "CSS3",
-          "icon": "i-logos-css-3"
-        },
-        {
-          "name": "Java",
-          "icon": "i-logos-java"
-        },
-        {
-          "name": "Python",
-          "icon": "i-logos-python"
-        },
-        {
-          "name": "R Lang",
-          "icon": "i-logos-r-lang"
-        }
+        { "name": "TypeScript", "icon": "i-logos-typescript-icon" },
+        { "name": "JavaScript", "icon": "i-logos-javascript" },
+        { "name": "Python", "icon": "i-logos-python" }
       ]
     },
     {
-      "id": "frontend",
-      "name": {
-        "en": "Frontend Development",
-        "fr": "Développement Frontend",
-        "es": "Desarrollo Frontend"
-      },
+      "id": "web",
+      "name": { "en": "Web & Frontend", "es": "Web y Frontend" },
       "items": [
-        {
-          "name": "Nuxt Stack",
-          "icon": "i-logos-nuxt-icon"
-        },
-        {
-          "name": "Vue",
-          "icon": "i-logos-vue"
-        },
-        {
-          "name": "Vite",
-          "icon": "i-logos-vitejs"
-        },
-        {
-          "name": "TailwindCss",
-          "icon": "i-logos-tailwindcss-icon"
-        }
+        { "name": "HTML5", "icon": "i-logos-html-5" },
+        { "name": "CSS3", "icon": "i-logos-css-3" },
+        { "name": "Nuxt", "icon": "i-logos-nuxt-icon" },
+        { "name": "Vue", "icon": "i-logos-vue" },
+        { "name": "Vite", "icon": "i-logos-vitejs" },
+        { "name": "TailwindCSS", "icon": "i-logos-tailwindcss-icon" }
       ]
     },
     {
-      "id": "devops",
-      "name": {
-        "en": "DevOps & Infrastructure",
-        "fr": "DevOps & Infrastructure",
-        "es": "DevOps & Infrastructure"
-      },
+      "id": "mobile",
+      "name": { "en": "Mobile", "es": "Móvil" },
       "items": [
-        {
-          "name": "Docker",
-          "icon": "i-logos-docker-icon"
-        },
-        {
-          "name": "Git",
-          "icon": "i-logos-git-icon"
-        },
-        {
-          "name": "GitHub",
-          "icon": "i-logos-github-icon"
-        },
-        {
-          "name": "Traefik",
-          "icon": "i-devicon-traefikproxy"
-        },
-        {
-          "name": "Proxmox",
-          "icon": "i-devicon-proxmox-wordmark"
-        },
-        {
-          "name": "Linux",
-          "icon": "i-logos-linux-tux"
-        },
-        {
-          "name": "CloudFlare",
-          "icon": "i-logos-cloudflare-icon"
-        }
+        { "name": "React Native", "icon": "i-devicon-reactnative" },
+        { "name": "Swift (iOS)", "icon": "i-logos-swift" }
       ]
     },
     {
       "id": "backend",
-      "name": {
-        "en": "BackEnd & Data",
-        "fr": "BackEnd & Data",
-        "es": "BackEnd & Data"
-      },
+      "name": { "en": "Backend", "es": "Backend" },
       "items": [
-        {
-          "name": "AdonisJs",
-          "icon": "i-logos-adonisjs-icon"
-        },
-        {
-          "name": "Nuxt (powered by Nitro)",
-          "icon": "i-logos-nuxt-icon"
-        },
-        {
-          "name": "PostgreSQL",
-          "icon": "i-logos-postgresql"
-        },
-        {
-          "name": "Redis",
-          "icon": "i-logos-redis"
-        },
-        {
-          "name": "MariaDB",
-          "icon": "i-logos-mariadb-icon"
-        }
+        { "name": "Django", "icon": "i-logos-django-icon" },
+        { "name": "AdonisJS", "icon": "i-logos-adonisjs-icon" },
+        { "name": "Nuxt (Nitro)", "icon": "i-logos-nuxt-icon" },
+        { "name": "PostgreSQL", "icon": "i-logos-postgresql" },
+        { "name": "Redis", "icon": "i-logos-redis" },
+        { "name": "MariaDB", "icon": "i-logos-mariadb-icon" }
       ]
     },
     {
-      "id": "python-frameworks",
-      "name": {
-        "en": "Python Frameworks",
-        "fr": "Frameworks Python",
-        "es": "Frameworks Python"
-      },
+      "id": "devops",
+      "name": { "en": "DevOps & Infrastructure", "es": "DevOps e Infraestructura" },
       "items": [
-        {
-          "name": "Tensorflow",
-          "icon": "i-logos-tensorflow"
-        },
-        {
-          "name": "PyTorch",
-          "icon": "i-logos-pytorch-icon"
-        },
-        {
-          "name": "Scikit-Learn",
-          "icon": "i-devicon-scikitlearn"
-        },
-        {
-          "name": "Numpy",
-          "icon": "i-devicon-numpy"
-        },
-        {
-          "name": "MatPlotLib",
-          "icon": "i-devicon-matplotlib"
-        },
-        {
-          "name": "Seaborn",
-          "icon": "i-logos-seaborn-icon"
-        },
-        {
-          "name": "Pandas",
-          "icon": "i-devicon-pandas"
-        }
+        { "name": "Docker", "icon": "i-logos-docker-icon" },
+        { "name": "Git", "icon": "i-logos-git-icon" },
+        { "name": "GitHub", "icon": "i-logos-github-icon" },
+        { "name": "GitLab", "icon": "i-logos-gitlab" },
+        { "name": "Traefik", "icon": "i-devicon-traefikproxy" },
+        { "name": "Proxmox", "icon": "i-devicon-proxmox-wordmark" },
+        { "name": "Linux", "icon": "i-logos-linux-tux" },
+        { "name": "CloudFlare", "icon": "i-logos-cloudflare-icon" }
+      ]
+    },
+    {
+      "id": "methodologies",
+      "name": { "en": "Methodologies", "es": "Metodologías" },
+      "items": [
+        { "name": { "en": "Scrum", "es": "Scrum" } },
+        { "name": { "en": "Agile", "es": "Ágil" } },
+        { "name": { "en": "Kanban", "es": "Kanban" } },
+        { "name": { "en": "PMBOK", "es": "PMBOK" } },
+        { "name": { "en": "Hybrid methodologies", "es": "Metodologías híbridas" } }
+      ]
+    },
+    {
+      "id": "project-management",
+      "name": { "en": "Project Management", "es": "Gestión de Proyectos" },
+      "items": [
+        { "name": { "en": "Agile project management", "es": "Gestión ágil de proyectos" } },
+        { "name": { "en": "Backlog management", "es": "Gestión de backlog" } },
+        { "name": { "en": "Team leadership", "es": "Liderazgo de equipos" } },
+        { "name": { "en": "Stakeholder communication", "es": "Comunicación con stakeholders" } },
+        { "name": { "en": "User-centered design (UX)", "es": "Diseño centrado en el usuario (UX)" } }
+      ]
+    },
+    {
+      "id": "soft-skills",
+      "name": { "en": "Soft Skills", "es": "Habilidades blandas" },
+      "items": [
+        { "name": { "en": "Communication", "es": "Comunicación" } },
+        { "name": { "en": "Teamwork", "es": "Trabajo en equipo" } },
+        { "name": { "en": "Problem solving", "es": "Resolución de problemas" } },
+        { "name": { "en": "Emotional intelligence", "es": "Inteligencia emocional" } },
+        { "name": { "en": "Continuous improvement", "es": "Mejora continua" } },
+        { "name": { "en": "Adaptability", "es": "Adaptabilidad" } }
+      ]
+    },
+    {
+      "id": "ai-automation",
+      "name": { "en": "AI & Automation", "es": "Inteligencia Artificial y Automatización" },
+      "items": [
+        { "name": { "en": "LLMs & prompt engineering", "es": "LLMs e ingeniería de prompts" }, "icon": "i-ph-brain-duotone" },
+        { "name": { "en": "RAG architectures", "es": "Arquitecturas RAG" }, "icon": "i-ph-cube-duotone" },
+        { "name": { "en": "Multi-agent systems", "es": "Sistemas multiagente" }, "icon": "i-ph-robot-duotone" },
+        { "name": { "en": "Computer vision", "es": "Visión por computadora" }, "icon": "i-ph-sparkle-duotone" },
+        { "name": { "en": "Process automation", "es": "Automatización de procesos" }, "icon": "i-ph-gear-six-duotone" }
+      ]
+    },
+    {
+      "id": "product-entrepreneurship",
+      "name": { "en": "Product & Entrepreneurship", "es": "Producto y Emprendimiento" },
+      "items": [
+        { "name": { "en": "Product design", "es": "Diseño de producto" }, "icon": "i-ph-lightbulb-duotone" },
+        { "name": { "en": "MVP & discovery", "es": "MVP y descubrimiento" }, "icon": "i-ph-rocket-launch-duotone" },
+        { "name": { "en": "Collaboration", "es": "Colaboración" }, "icon": "i-ph-handshake-duotone" },
+        { "name": { "en": "Roadmapping", "es": "Roadmap" }, "icon": "i-ph-chart-line-up-duotone" }
       ]
     }
   ]

@@ -1,10 +1,10 @@
 {
   "main": {
     "question": "¡Genial! Háblame un poco más sobre ti.",
-    "intro": "Soy Yurier Herrera, desarrollador Full-Stack, diseñador y Project Manager de TI enfocado en crear productos digitales útiles y bien cuidados.",
+    "intro": "Soy Yurier Herrera, ingeniero de software y emprendedor.{space} Diseño y construyo productos digitales con obsesión por la experiencia de usuario, y aplico inteligencia artificial y automatización para transformar procesos.{space} Fui profesor de Ingeniería de Software y de Gestión de Proyectos, y estoy abierto a colaborar con empresas y emprendedores en productos y soluciones nuevas.",
     "visitor": "Hola Yurier, muéstrame lo que haces.",
     "ready": "Claro. Puedes empezar por mis proyectos o artículos, o abrir el dock de mensajes para preguntarme cualquier otra cosa. {links}",
-    "about": "Soy desarrollador Full-Stack y Project Manager con más de 5 años de experiencia liderando la concepción y entrega de soluciones digitales de alto impacto.{space} Experto en armonizar la excelencia técnica en el desarrollo (Django, APIs REST) con los principios de la gestión de proyectos (SCRUM, PMBOK) y el diseño centrado en el usuario (UX/UI). Capacidad demostrada para dirigir equipos multidisciplinarios en la creación de productos escalables para web y móvil, desde la ideación hasta el lanzamiento. Actualmente enfocado en la vanguardia tecnológica, con pasión por la Inteligencia Artificial, aplicando conocimientos en Visión por Computadora (CV), HCI (Interacción Humano-Computadora) y arquitecturas RAG para crear soluciones innovadoras. .{space} Accede directamente a otras páginas: {links}",
+    "about": "Soy Yurier Herrera, ingeniero de software y emprendedor. Fui profesor de Ingeniería de Software y de Gestión de Proyectos en la Universidad de las Ciencias Informáticas, y hoy me dedico a concebir y construir productos digitales con una obsesión por la experiencia de usuario.{space} Combino la excelencia técnica en el desarrollo (Django, APIs REST, web y móvil) con la gestión de proyectos (SCRUM, PMBOK), y aplico inteligencia artificial y automatización para transformar procesos en empresas y organizaciones. Estoy abierto a colaborar con empresas y con otros emprendedores en la creación de soluciones y productos novedosos.{space} Accede directamente a otras páginas: {links}",
     "powered": "Impulsado por Nuxt"
   },
   "palette": {
@@ -131,8 +131,8 @@
       "offline": "Ahora mismo estoy desconectado. Vuelve más tarde para ver en lo que estoy trabajando. {maths}",
       "working": "Estoy trabajando en línea. ¡Mira lo que estoy haciendo justo debajo!",
       "idling": "Estoy en reposo en mi ordenador con {editor} en segundo plano.",
-      "maths": "Estoy probablemente haciendo matemáticas o durmiendo.",
-      "response": "Las estadísticas son propulsadas y registradas por WakaTime.",
+      "maths": "Probablemente esté programando o dándole vueltas a un producto nuevo.",
+      "response": "En lo que estoy trabajando ahora mismo:",
       "tooltip": {
         "online": "Estoy conectado 👋",
         "offline": "Estoy desconectado 🫥",
@@ -192,24 +192,23 @@
       "tooltip": "Mi agente ia"
     },
     "resume": {
-      "main": "A continuación encontrarás dos versiones de mi currículum: una en francés y otra en inglés, pensadas para distintos contextos académicos y profesionales. {space} Elige la que mejor se adapte a tus necesidades haciendo clic en el botón correspondiente.",
+      "main": "Aquí tienes mi currículum. Puedes descargarlo en PDF:",
       "uploaded": "Cargado",
       "files": {
         "en": "Versión en inglés",
-        "fr": "Versión francesa",
         "pdf": "Archivo pdf"
       }
     },
     "projects": {
-      "main": "Una selección de mis proyectos realizados en R, Python y desarrollo web, cubriendo áreas variadas como análisis de datos, aprendizaje automático y aplicaciones web. Estos proyectos destacan mis habilidades en codificación, resolución de problemas y diseño de soluciones. {space} Aquí, presento los tres proyectos de los que estoy más orgulloso, pero puedes descubrir todos mis proyectos directamente en la página de {projects}.",
+      "main": "Una selección de mis proyectos de desarrollo de software: aplicaciones web, móviles, herramientas y experimentos con inteligencia artificial.{space} Aquí presento los tres proyectos de los que estoy más orgulloso, pero puedes descubrir todos mis proyectos directamente en la página de {projects}.",
       "link": "Proyectos"
     },
     "writings": {
-      "main": "Comparto mis reflexiones sobre matemáticas, inteligencia artificial, desarrollo y mis pasiones, organizándolas para seguir la evolución de mis ideas y proyectos. {space}Aquí, encontrarás los dos artículos más recientes, pero todos mis escritos son accesibles en la página de {writings}, para explorar más a fondo mi universo entre código, matemáticas e IA.",
+      "main": "Comparto mis reflexiones sobre desarrollo de software, inteligencia artificial, producto y emprendimiento, organizándolas para seguir la evolución de mis ideas y proyectos.{space} Aquí encontrarás los dos artículos más recientes, pero todos mis escritos están accesibles en la página de {writings}.",
       "link": "Artículos"
     },
     "experiences": {
-      "main": "A lo largo de mi recorrido, he tenido la oportunidad de participar en distintos proyectos: desde trabajos estudiantiles y prácticas de verano, hasta experiencias adquiridas de forma autodidacta.\nCada una de ellas ha enriquecido mi comprensión del terreno y ha reforzado mis habilidades en estadística, desarrollo y gestión de datos, en contextos técnicos muy variados.\nTambién me han enseñado a trabajar en equipo con eficacia, desarrollando al mismo tiempo una gran autonomía y capacidad de adaptación.",
+      "main": "A lo largo de mi recorrido he participado en distintos proyectos: desde la docencia universitaria y la gestión de proyectos hasta el desarrollo de software y el trabajo autodidacta.\nCada una de esas etapas ha reforzado mis habilidades técnicas y de gestión en contextos muy variados.\nTambién me han enseñado a trabajar en equipo con eficacia, con gran autonomía y capacidad de adaptación.",
       "today": "Hoy"
     },
     "education": {
@@ -219,18 +218,16 @@
       "course": "Curso",
       "credential": "Ver credencial"
     },
-    "hobbies": "Además de la programación y mis proyectos técnicos, dedico una gran parte de mi tiempo libre a mis pasiones: deporte, música, viajes y momentos compartidos con amigos. El deporte me trae rigor y perseverancia, la música estimula mi creatividad y el viaje me abre a otras culturas, a otras formas de pensar, lo que también nutre mi curiosidad intelectual. Estas pasiones me ayudan a mantener un buen equilibrio y fortalecer las cualidades que movilizo en mis estudios y en mi carrera: curiosidad, compromiso, autonomía y voluntad constante para progresar. Me hacen alguien motivado, adaptable y siempre listo para asumir nuevos desafíos."
+    "hobbies": "Además de la programación y mis proyectos técnicos, dedico una gran parte de mi tiempo libre a mis pasiones: deporte, música, viajes y momentos compartidos con amigos. El deporte me trae rigor y perseverancia, la música estimula mi creatividad y el viaje me abre a otras culturas, a otras formas de pensar, lo que también nutre mi curiosidad intelectual. Estas pasiones me ayudan a mantener un buen equilibrio y fortalecer las cualidades que movilizo en mis estudios y en mi carrera: curiosidad, compromiso, autonomía y voluntad constante para progresar. Me hacen alguien motivado, adaptable y siempre listo para asumir nuevos desafíos.",
+    "skills": "Estas son las tecnologías y herramientas con las que trabajo, junto con las metodologías y habilidades que aplico al liderar proyectos: lenguajes de programación, desarrollo web y móvil, backend, DevOps, gestión de proyectos y habilidades blandas."
   },
   "error": {
     "main": "Creo que estás perdido, volvamos a la",
     "redirect": "página de inicio"
   },
-  "skills": {
-    "main": "Como ingeniero de software y estudiante de matemáticas, combino el rigor científico con el pragmatismo técnico para diseñar soluciones adaptadas a los desafíos de proyectos de datos y matemáticos. Mi enfoque se centra en una comprensión profunda de las necesidades, desde la preparación de datos hasta su implementación, pasando por la modelización y la optimización del rendimiento.Apasionado por la inteligencia artificial y la ciencia de datos, me esfuerzo por equilibrar la innovación con la robustez estadística. Siempre en busca de aprendizaje, exploro tanto los avances tecnológicos como los retos emprendedores o financieros. Curioso y entusiasta, disfruto compartiendo conocimientos y descubriendo nuevos conceptos, ya sean teoremas o tecnologías emergentes."
-  },
   "post": {
     "footer": {
-      "thanks": "¡Gracias por leer! Me llamo {name} y me encanta escribir sobre inteligencia artificial, ciencia de datos y todo lo que se encuentra en la intersección entre las matemáticas y la programación. {jump} Llevo años programando y explorando las matemáticas, y cada día aprendo algo nuevo — ya sea autoalojando herramientas en mi homelab, experimentando con modelos de aprendizaje automático o profundizando en métodos estadísticos. {jump} Comparto mis conocimientos aquí porque sé lo valiosos que pueden ser los recursos claros, prácticos y accesibles, especialmente cuando uno está empezando o explorando temas técnicos en profundidad. {jump} Espero que este artículo te haya gustado y que hayas aprendido algo útil. Si es así, {comment} — ¡me ayuda mucho y significa mucho para mí!",
+      "thanks": "¡Gracias por leer! Me llamo {name} y me encanta escribir sobre inteligencia artificial, desarrollo de software y producto. {jump} Llevo años programando y construyendo productos, y cada día aprendo algo nuevo. {jump} Comparto mis conocimientos aquí porque sé lo valiosos que pueden ser los recursos claros y prácticos. {jump} Espero que te haya resultado útil. Si es así, {comment} — ¡ayuda mucho!",
       "comment": "considera compartirlo"
     },
     "link": {
@@ -241,13 +238,22 @@
   },
   "alert": "Por falta de tiempo, no tuve tiempo para traducir este contenido al francés. Gracias por su comprensión.",
   "writings": {
-    "description": "Todas mis reflexiones sobre programación, matemáticas, la concepción de la inteligencia artificial, etc., están organizadas en orden cronológico.",
-    "title": "Escritos sobre matemáticas, inteligencia artificial, desarrollo y mis pasiones.",
+    "description": "Todas mis reflexiones sobre programación, inteligencia artificial, producto y emprendimiento están organizadas en orden cronológico.",
+    "title": "Escritos sobre desarrollo de software, inteligencia artificial, producto y emprendimiento.",
     "back": "Volver a los escritos"
   },
   "projects": {
     "description": "Una colección de mis proyectos utilizando Python o tecnologías de desarrollo web. Estos proyectos abarcan varios dominios, incluyendo Inteligencia Artificial y aplicaciones web, mostrando mis habilidades en codificación, resolución de problemas y desarrollo de proyectos.",
     "title": "Todos mis proyectos en los que he trabajado, tanto académicos como personales",
     "back": "Volver a proyectos"
+  },
+  "share": {
+    "label": "Compartir",
+    "x": "Compartir en X",
+    "linkedin": "Compartir en LinkedIn",
+    "whatsapp": "Compartir por WhatsApp",
+    "telegram": "Compartir por Telegram",
+    "copy": "Copiar enlace",
+    "copied": "¡Enlace copiado!"
   }
 }

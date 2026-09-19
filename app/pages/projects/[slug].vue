@@ -50,10 +50,11 @@ useSeoMeta({
           {{ project.title }}
         </h1>
         <div
-          class="text-sm text-neutral-500 duration-300 flex items-center gap-1"
+          class="text-sm text-neutral-500 duration-300 flex items-center gap-2"
         >
           <UIcon name="ph:calendar-duotone" size="16" />
           <p>{{ useDateFormat(project.publishedAt, 'DD MMMM YYYY').value }} </p>
+          <PostShare :title="project.title" />
         </div>
       </div>
       <p class="mt-2 text-base">
@@ -81,6 +82,7 @@ useSeoMeta({
         class="!max-w-none prose dark:prose-invert"
       />
     </ClientOnly>
+    <PostShare :title="project.title" class="mt-8" />
     <PostFooter />
   </UContainer>
 </template>

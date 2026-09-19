@@ -34,10 +34,11 @@ useSeoMeta(writing.value.seo || {})
           {{ writing.title }}
         </h1>
         <div
-          class="text-sm text-neutral-500 duration-300 flex items-center gap-1"
+          class="text-sm text-neutral-500 duration-300 flex items-center gap-2"
         >
           <UIcon name="ph:calendar-duotone" size="16" />
           <p>{{ useDateFormat(writing.publishedAt, 'DD MMMM YYYY').value }} </p>
+          <PostShare :title="writing.title" />
         </div>
       </div>
       <p class="mt-2 text-base">
@@ -64,6 +65,7 @@ useSeoMeta(writing.value.seo || {})
         class="!max-w-none prose dark:prose-invert"
       />
     </ClientOnly>
+    <PostShare :title="writing.title" class="mt-8" />
     <PostFooter />
   </UContainer>
 </template>

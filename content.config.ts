@@ -73,8 +73,11 @@ export default defineContentConfig({
             es: z.string(),
           }),
           items: z.array(z.object({
-            name: z.string(),
-            icon: z.string(),
+            name: z.union([z.string(), z.object({
+              en: z.string(),
+              es: z.string(),
+            })]),
+            icon: z.string().optional(),
           })),
         })),
       }),

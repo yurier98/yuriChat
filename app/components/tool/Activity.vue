@@ -8,10 +8,12 @@ const { data: activity, refresh } = await useAsyncData<Activity>('activity', () 
 
 useIntervalFn(async () => await refresh(), 5000)
 const codingActivity = computed(() => {
-  const activities = activity.value!.data.activities.filter(activity => IDEs.some(ide => ide.name === activity.name)).map(activity => ({
-    ...activity,
-    name: activity.assets?.small_text === 'Cursor' ? 'Cursor' : activity.name,
-  }))
+  const activities = (activity.value?.data?.activities ?? [])
+    .filter(activity => IDEs.some(ide => ide.name === activity.name))
+    .map(activity => ({
+      ...activity,
+      name: activity.assets?.small_text === 'Cursor' ? 'Cursor' : activity.name,
+    }))
 
   return activities.length > 1
     ? activities[Math.floor(Math.random() * activities.length)]
@@ -25,8 +27,8 @@ const isActive = computed(() => {
   const { name, details, state } = codingActivity.value
 
   return name === 'Visual Studio Code' || name === 'Cursor'
-    ? !details.includes('Idling')
-    : state.toLowerCase().includes('editing')
+    ? typeof details === 'string' && !details.includes('Idling')
+    : typeof state === 'string' && state.toLowerCase().includes('editing')
 })
 
 const getActivity = computed(() => {
@@ -35,7 +37,7 @@ const getActivity = computed(() => {
 
   const { name, details, state, timestamps } = codingActivity.value
 
-  const project = details
+  const project = typeof details === 'string' && details.length > 0
     ? details
       .charAt(0)
       .toUpperCase()
@@ -45,8 +47,15 @@ const getActivity = computed(() => {
         .trim()
     : ''
 
-  const stateWord = state && state.split(' ').length >= 2 ? state.split(' ')[1] : t('tool.activity.secret')
-  const ago = useTimeAgo(timestamps.start, {
+  const stateWord = typeof state === 'string' && state.split(' ').length >= 2
+    ? state.split(' ')[1] ?? t('tool.activity.secret')
+    : t('tool.activity.secret')
+
+  const start = timestamps?.start
+  if (typeof start !== 'number')
+    return
+
+  const ago = useTimeAgo(start, {
     messages: activityMessages[locale.value as keyof typeof activityMessages] as UseTimeAgoMessages,
   }).value
   const formatDate = (date: number, format: string) => useDateFormat(date, format, { locales: locale.value ?? 'en' }).value
@@ -58,8 +67,8 @@ const getActivity = computed(() => {
     start: {
       ago,
       formated: {
-        date: formatDate(timestamps.start, 'D MMMM'),
-        time: formatDate(timestamps.start, 'HH:mm'),
+        date: formatDate(start, 'D MMMM'),
+        time: formatDate(start, 'HH:mm'),
       },
     },
   }
@@ -94,7 +103,7 @@ const getActivity = computed(() => {
       <ClientOnly>
         <UCard v-if="getActivity" variant="outline" class="md:max-w-1/2 m-1 shadow-sm bg-white dark:bg-neutral-900" :ui="{ body: 'flex gap-8 items-center' }">
           <UIcon
-            :name="IDEs.find(ide => ide.name === getActivity!.name)!.icon"
+            :name="IDEs.find(ide => ide.name === getActivity.name)?.icon ?? 'i-ph-code-duotone'"
             size="64"
           />
           <div class="">
@@ -102,7 +111,7 @@ const getActivity = computed(() => {
               {{ getActivity.name }}
             </div>
             <div v-if="isActive">
-              {{ getActivity.state!.split(' ').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ') }}
+              {{ getActivity.state.split(' ').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ') }}
             </div>
             <div>{{ getActivity.project }}</div>
           </div>

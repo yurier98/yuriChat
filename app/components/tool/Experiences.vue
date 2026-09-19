@@ -19,8 +19,8 @@ function formatDate(date: string) {
   const format = day === undefined ? 'MMM YYYY' : 'D MMM YYYY'
   return useDateFormat(new Date(year, month - 1, day ?? 1), format, { locales: locale.value ?? 'en' }).value
 }
-function getLanguageForText(text: { en: string, es: string, fr: string }) {
-  return locale.value === 'en' ? text.en : locale.value === 'es' ? text.es : text.fr
+function getLanguageForText(text: { en: string, es: string }) {
+  return locale.value === 'en' ? text.en : text.es
 }
 </script>
 

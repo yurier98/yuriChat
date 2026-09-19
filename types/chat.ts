@@ -48,24 +48,75 @@ export interface ChatMessage {
   createdAt: Date
 }
 
+// Order matters: groups and items are listed by how often visitors reach for them,
+// most requested first. Do NOT re-add an alphabetical `.sort()` here — the previous one
+// sorted by the i18n KEY, so it silently overrode any deliberate order.
 export const ChatMessages = [
   {
-    id: 'interface',
-    label: 'Interface', // TODO: use translation : command.interface
+    id: 'userinfo',
+    label: 'Yurier Herrera',
     items: [
       {
-        label: 'command.theme.label',
-        icon: 'i-ph-lightbulb-filament-duotone',
-        prompt: 'command.theme.prompt',
-        type: ChatType.THEME,
-        fetchStates: [ChatFetchState.THINKING, ChatFetchState.GENERATING],
+        label: 'command.projects.label',
+        icon: 'i-ph-code-duotone',
+        prompt: 'command.projects.prompt',
+        type: ChatType.PROJECTS,
+        fetchStates: [ChatFetchState.FETCHING, ChatFetchState.CHECKING, ChatFetchState.GENERATING],
       },
       {
-        label: 'command.language.label',
-        icon: 'i-ph-translate-duotone',
-        prompt: 'command.language.prompt',
-        type: ChatType.LANGUAGE,
-        fetchStates: [ChatFetchState.THINKING, ChatFetchState.GENERATING],
+        label: 'command.skills.label',
+        icon: 'i-ph-rocket-duotone',
+        prompt: 'command.skills.prompt',
+        type: ChatType.SKILLS,
+        fetchStates: [ChatFetchState.FETCHING, ChatFetchState.CHECKING],
+      },
+      {
+        label: 'command.experiences.label',
+        icon: 'i-ph-briefcase-duotone',
+        prompt: 'command.experiences.prompt',
+        type: ChatType.EXPERIENCES,
+        fetchStates: [ChatFetchState.CHECKING],
+      },
+      {
+        label: 'command.education.label',
+        icon: 'i-ph-graduation-cap-duotone',
+        prompt: 'command.education.prompt',
+        type: ChatType.EDUCATION,
+        fetchStates: [ChatFetchState.CHECKING],
+      },
+      {
+        label: 'command.resume.label',
+        icon: 'i-ph-address-book-duotone',
+        prompt: 'command.resume.prompt',
+        type: ChatType.RESUME,
+        fetchStates: [ChatFetchState.CHECKING],
+      },
+      {
+        label: 'command.contact.label',
+        icon: 'i-ph-envelope-duotone',
+        prompt: 'command.contact.prompt',
+        type: ChatType.CONTACT,
+        fetchStates: [ChatFetchState.CHECKING],
+      },
+      {
+        label: 'command.writings.label',
+        icon: 'i-ph-books-duotone',
+        prompt: 'command.writings.prompt',
+        type: ChatType.WRITINGS,
+        fetchStates: [ChatFetchState.FETCHING, ChatFetchState.GENERATING],
+      },
+      {
+        label: 'command.hobbies.label',
+        icon: 'i-ph-heart-duotone',
+        prompt: 'command.hobbies.prompt',
+        type: ChatType.HOBBIES,
+        fetchStates: [ChatFetchState.CHECKING],
+      },
+      {
+        label: 'command.credits.label',
+        icon: 'i-ph-star-duotone',
+        prompt: 'command.credits.prompt',
+        type: ChatType.CREDITS,
       },
     ],
   },
@@ -94,87 +145,12 @@ export const ChatMessages = [
         type: ChatType.ACTIVITY,
         fetchStates: [ChatFetchState.FETCHING, ChatFetchState.GENERATING],
       },
-    ].sort((a, b) => a.label.localeCompare(b.label)),
-  },
-  {
-    id: 'userinfo',
-    label: 'Yurier Herrera',
-    items: [
-      {
-        label: 'command.credits.label',
-        icon: 'i-ph-star-duotone',
-        prompt: 'command.credits.prompt',
-        type: ChatType.CREDITS,
-      },
-      {
-        label: 'command.projects.label',
-        icon: 'i-ph-code-duotone',
-        prompt: 'command.projects.prompt',
-        type: ChatType.PROJECTS,
-        fetchStates: [ChatFetchState.FETCHING, ChatFetchState.CHECKING, ChatFetchState.GENERATING],
-      },
-      {
-        label: 'command.writings.label',
-        icon: 'i-ph-books-duotone',
-        prompt: 'command.writings.prompt',
-        type: ChatType.WRITINGS,
-        fetchStates: [ChatFetchState.FETCHING, ChatFetchState.GENERATING],
-      },
-      {
-        label: 'command.experiences.label',
-        icon: 'i-ph-briefcase-duotone',
-        prompt: 'command.experiences.prompt',
-        type: ChatType.EXPERIENCES,
-        fetchStates: [ChatFetchState.CHECKING],
-      },
-      {
-        label: 'command.education.label',
-        icon: 'i-ph-graduation-cap-duotone',
-        prompt: 'command.education.prompt',
-        type: ChatType.EDUCATION,
-        fetchStates: [ChatFetchState.CHECKING],
-      },
-      {
-        label: 'command.skills.label',
-        icon: 'i-ph-rocket-duotone',
-        prompt: 'command.skills.prompt',
-        type: ChatType.SKILLS,
-        fetchStates: [ChatFetchState.FETCHING, ChatFetchState.CHECKING],
-      },
-      {
-        label: 'command.resume.label',
-        icon: 'i-ph-address-book-duotone',
-        prompt: 'command.resume.prompt',
-        type: ChatType.RESUME,
-        fetchStates: [ChatFetchState.CHECKING],
-      },
-      {
-        label: 'command.contact.label',
-        icon: 'i-ph-envelope-duotone',
-        prompt: 'command.contact.prompt',
-        type: ChatType.CONTACT,
-        fetchStates: [ChatFetchState.CHECKING],
-      },
-      {
-        label: 'command.hobbies.label',
-        icon: 'i-ph-heart-duotone',
-        prompt: 'command.hobbies.prompt',
-        type: ChatType.HOBBIES,
-        fetchStates: [ChatFetchState.CHECKING],
-      },
-    ].sort((a, b) => a.label.localeCompare(b.label)),
+    ],
   },
   {
     id: 'uses',
     label: 'Uses',
     items: [
-      {
-        label: 'command.hardware.label',
-        icon: 'i-ph-chalkboard-simple-duotone',
-        prompt: 'command.hardware.prompt',
-        type: ChatType.HARDWARE,
-        fetchStates: [ChatFetchState.FETCHING],
-      },
       {
         label: 'command.software.label',
         icon: 'i-ph-app-store-logo-duotone',
@@ -183,11 +159,38 @@ export const ChatMessages = [
         fetchStates: [ChatFetchState.FETCHING],
       },
       {
+        label: 'command.hardware.label',
+        icon: 'i-ph-chalkboard-simple-duotone',
+        prompt: 'command.hardware.prompt',
+        type: ChatType.HARDWARE,
+        fetchStates: [ChatFetchState.FETCHING],
+      },
+      {
         label: 'command.ide.label',
         icon: 'i-ph-code-simple-duotone',
         prompt: 'command.ide.prompt',
         type: ChatType.IDE,
         fetchStates: [ChatFetchState.FETCHING],
+      },
+    ],
+  },
+  {
+    id: 'interface',
+    label: 'Interface', // TODO: use translation : command.interface
+    items: [
+      {
+        label: 'command.theme.label',
+        icon: 'i-ph-lightbulb-filament-duotone',
+        prompt: 'command.theme.prompt',
+        type: ChatType.THEME,
+        fetchStates: [ChatFetchState.THINKING, ChatFetchState.GENERATING],
+      },
+      {
+        label: 'command.language.label',
+        icon: 'i-ph-translate-duotone',
+        prompt: 'command.language.prompt',
+        type: ChatType.LANGUAGE,
+        fetchStates: [ChatFetchState.THINKING, ChatFetchState.GENERATING],
       },
     ],
   },
