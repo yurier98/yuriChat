@@ -35,6 +35,9 @@ export default defineNuxtConfig({
 
   ogImage: {
     enabled: true,
+    // Per the module docs: the inspector's preview needs debug mode. Kept off in
+    // production so the debug surface is not exposed there.
+    debug: process.env.NODE_ENV !== 'production',
     defaults: {
       renderer: 'satori',
       width: 1200,
