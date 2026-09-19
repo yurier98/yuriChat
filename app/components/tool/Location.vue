@@ -8,15 +8,15 @@ const pending = ref(true)
 const fallbackLocation: LocationResponse = {
   name: 'Universidad de las Ciencias Informáticas',
   shortName: 'UCI',
-  address: 'Carretera a San Antonio de los Baños, Km 2½, La Habana, Cuba',
+  address: 'Av. Sete de Setembro, Centro, Curitiba - PR, Brasil',
   coordinates: {
-    latitude: 22.986160,
-    longitude: -82.465181,
+    latitude: -25.4284,
+    longitude: -49.2733,
   },
-  city: 'La Habana',
-  country: 'Cuba',
-  countryCode: 'CU',
-  flag: '🇨🇺',
+  city: 'Curitiba',
+  country: 'Brasil',
+  countryCode: 'BR',
+  flag: '🇧🇷',
   description: 'Universidad especializada en Ciencias de la Computación e Informática',
   website: 'https://www.uci.cu',
   founded: 2002,
@@ -28,9 +28,9 @@ const fallbackLocation: LocationResponse = {
     'Inteligencia Artificial',
     'Desarrollo de Software',
   ],
-  timezone: 'America/Havana',
-  currentTime: new Date().toLocaleString('es-CU', {
-    timeZone: 'America/Havana',
+  timezone: 'America/Sao_Paulo',
+  currentTime: new Date().toLocaleString('pt-BR', {
+    timeZone: 'America/Sao_Paulo',
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -74,7 +74,7 @@ finally {
     </div>
 
     <!-- Loading State -->
-    <div v-if="pending" class="m-1 md:max-w-2/3 shadow-sm rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900">
+    <div v-if="pending" class="m-1 shadow-sm rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900">
       <div class="p-6">
         <div class="flex items-center gap-3 mb-4">
           <div class="w-12 h-12 bg-gray-300 dark:bg-gray-600 rounded-full animate-pulse" />
@@ -92,7 +92,7 @@ finally {
     </div>
 
     <!-- UCI Information Card -->
-    <div v-else class="m-1 md:max-w-2/3 shadow-sm rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900">
+    <div v-else class="m-1 shadow-sm rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900">
       <div class="p-6">
         <!-- University Header -->
         <div class="flex items-center gap-3 mb-4">

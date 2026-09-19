@@ -26,6 +26,10 @@ const googleMapsUrl = computed(() => {
   const { latitude, longitude } = props.location.coordinates
   return `https://www.google.com/maps?q=${latitude},${longitude}&z=15`
 })
+
+// Hemisferios según el signo de las coordenadas
+const latitudeHemisphere = computed(() => props.location.coordinates.latitude >= 0 ? 'N' : 'S')
+const longitudeHemisphere = computed(() => props.location.coordinates.longitude >= 0 ? 'E' : 'O')
 </script>
 
 <template>
@@ -80,8 +84,8 @@ const googleMapsUrl = computed(() => {
       <div class="flex items-center gap-1">
         <UIcon name="i-ph-crosshair-duotone" class="text-xs" />
         <span>
-          {{ location.coordinates.latitude.toFixed(4) }}°N,
-          {{ Math.abs(location.coordinates.longitude).toFixed(4) }}°O
+          {{ Math.abs(location.coordinates.latitude).toFixed(4) }}°{{ latitudeHemisphere }},
+          {{ Math.abs(location.coordinates.longitude).toFixed(4) }}°{{ longitudeHemisphere }}
         </span>
       </div>
     </div>
