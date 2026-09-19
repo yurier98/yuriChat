@@ -33,20 +33,12 @@ export default defineNuxtConfig({
     },
   },
 
+  // Dynamic OG image generation is OFF on purpose. It was tried and reverted:
+  // the generated images were correct when fetched directly, but the share
+  // preview never rendered them, so the site goes back to the single static
+  // image at public/og.png, which does preview correctly.
   ogImage: {
-    enabled: true,
-    // Per the module docs: the inspector's preview needs debug mode. Kept off in
-    // production so the debug surface is not exposed there.
-    debug: process.env.NODE_ENV !== 'production',
-    defaults: {
-      renderer: 'satori',
-      width: 1200,
-      height: 630,
-      // Long cache in production, no cache in development — otherwise the dev
-      // server keeps serving the first render for 3 days and design edits look
-      // like they did nothing.
-      cacheMaxAgeSeconds: process.env.NODE_ENV === 'production' ? 60 * 60 * 24 * 3 : 0,
-    },
+    enabled: false,
   },
   linkChecker: {
     enabled: false,

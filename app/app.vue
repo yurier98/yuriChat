@@ -13,25 +13,19 @@ useHead({
   ],
 })
 
+// Single static share image (public/og.png), served with an ABSOLUTE url
+// because social crawlers ignore relative image paths.
+const ogImage = `${useRequestURL().origin}/og.png`
+
 useSeoMeta({
   // nuxt-seo-utils appends "• <site.name>" to every title, and site.name is
   // "Yurier Herrera" — so any title that already contains the name rendered it
   // twice. Each page writes its own complete, name-bearing title instead.
   titleTemplate: '%s',
-  // og:image is owned by nuxt-og-image (see defineOgImage calls per page).
-})
-
-// Global fallback share image: nuxt-og-image v6 removed `defaults.component`,
-// so pages without their own defineOgImage() would emit no og:image at all.
-// The payload registry is keyed by "og", so a page-level call overrides this.
-// The brand footer is redundant on the home image, where the name IS the title,
-// so it is hidden there via an empty `footer`.
-defineOgImage('OgImagePortfolio', {
-  title: 'Yurier Herrera',
-  subtitle: 'UX-obsessed products · AI & automation',
-  // An empty string is dropped during props serialization, so the component's
-  // default footer would come back. Use a complementary line instead.
-  footer: 'Open to collaboration',
+  ogImage,
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogImageAlt: 'Yurier Herrera — Software Engineer & Entrepreneur',
 })
 
 const route = useRoute()

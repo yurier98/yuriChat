@@ -15,11 +15,6 @@ if (!writing.value) {
 const { t, locale } = useI18n({ useScope: 'global' })
 
 useSeoMeta(writing.value.seo || {})
-
-defineOgImage('OgImagePortfolio', {
-  title: writing.value?.title,
-  subtitle: writing.value?.description,
-})
 </script>
 
 <template>

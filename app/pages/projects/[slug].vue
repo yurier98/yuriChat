@@ -31,11 +31,6 @@ useSeoMeta({
   description: () => project.value?.description,
   author: 'Yurier Herrera',
 })
-
-defineOgImage('OgImagePortfolio', {
-  title: project.value?.title,
-  subtitle: project.value?.description,
-})
 </script>
 
 <template>
