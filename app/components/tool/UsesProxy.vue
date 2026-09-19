@@ -11,8 +11,6 @@ const category = computed(() => {
       return 'hardware'
     case ChatType.SOFTWARE:
       return 'software'
-    case ChatType.HOMELAB:
-      return 'homelab'
     case ChatType.IDE:
       return 'ide'
     default:

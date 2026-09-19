@@ -66,7 +66,7 @@ finally {
     <div v-if="!pending" class="mt-4">
       <div class="prose dark:prose-invert mb-3">
         <h4 class="text-lg font-semibold text-gray-900 dark:text-white flex items-center gap-2">
-          <UIcon name="i-ph-map-duotone" class="text-blue-600" />
+          <UIcon name="i-ph-map-duotone" class="text-primary" />
           Ubicación en el mapa
         </h4>
       </div>
@@ -87,104 +87,6 @@ finally {
           <div class="h-3 bg-gray-300 dark:bg-gray-600 rounded animate-pulse" />
           <div class="h-3 bg-gray-300 dark:bg-gray-600 rounded animate-pulse w-2/3" />
           <div class="h-3 bg-gray-300 dark:bg-gray-600 rounded animate-pulse w-1/2" />
-        </div>
-      </div>
-    </div>
-
-    <!-- UCI Information Card -->
-    <div v-else class="m-1 shadow-sm rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900">
-      <div class="p-6">
-        <!-- University Header -->
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-            <UIcon name="i-ph-graduation-cap-duotone" class="text-white text-xl" />
-          </div>
-          <div>
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-              {{ locationData.shortName }}
-            </h3>
-            <p class="text-sm text-gray-600 dark:text-gray-300">
-              {{ locationData.name }}
-            </p>
-          </div>
-        </div>
-
-        <!-- University Details -->
-        <div class="space-y-3">
-          <div class="flex items-start gap-2">
-            <UIcon name="i-ph-map-pin-duotone" class="text-blue-600 mt-1" />
-            <div>
-              <p class="text-sm font-medium text-gray-900 dark:text-white">
-                Dirección
-              </p>
-              <p class="text-sm text-gray-600 dark:text-gray-300">
-                {{ locationData.address }}
-              </p>
-            </div>
-          </div>
-
-          <div class="flex items-start gap-2">
-            <UIcon name="i-ph-calendar-duotone" class="text-green-600 mt-1" />
-            <div>
-              <p class="text-sm font-medium text-gray-900 dark:text-white">
-                Fundada
-              </p>
-              <p class="text-sm text-gray-600 dark:text-gray-300">
-                {{ locationData.founded }}
-              </p>
-            </div>
-          </div>
-
-          <div class="flex items-start gap-2">
-            <UIcon name="i-ph-clock-duotone" class="text-purple-600 mt-1" />
-            <div>
-              <p class="text-sm font-medium text-gray-900 dark:text-white">
-                Hora Local
-              </p>
-              <p class="text-sm text-gray-600 dark:text-gray-300">
-                {{ locationData.currentTime }}
-              </p>
-            </div>
-          </div>
-
-          <!-- Specialties -->
-          <div class="flex items-start gap-2">
-            <UIcon name="i-ph-student-duotone" class="text-orange-600 mt-1" />
-            <div>
-              <p class="text-sm font-medium text-gray-900 dark:text-white">
-                Especialidades
-              </p>
-              <div class="flex flex-wrap gap-1 mt-1">
-                <span
-                  v-for="specialty in locationData.specialties.slice(0, 3)"
-                  :key="specialty"
-                  class="inline-block px-2 py-1 text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full"
-                >
-                  {{ specialty }}
-                </span>
-                <span
-                  v-if="locationData.specialties.length > 3"
-                  class="inline-block px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-full"
-                >
-                  +{{ locationData.specialties.length - 3 }} más
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Website Link -->
-          <div class="pt-2 border-t border-gray-200 dark:border-gray-700">
-            <a
-              :href="locationData.website"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 text-sm text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
-            >
-              <UIcon name="i-ph-globe-duotone" />
-              Visitar sitio web
-              <UIcon name="i-ph-arrow-square-out-duotone" class="text-xs" />
-            </a>
-          </div>
         </div>
       </div>
     </div>

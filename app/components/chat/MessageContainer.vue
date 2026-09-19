@@ -17,7 +17,7 @@ const formatDate = computed(() => useDateFormat(props.message.createdAt, 'D MMMM
   <div v-else class="group flex flex-col items-end gap-2 duration-200">
     <div class="flex w-full justify-end">
       <div
-        class="max-w-[82%] rounded-[1.65rem] rounded-br-[0.7rem] border border-white/20 bg-[#0A84FF] px-4 py-2.5 text-[15px] font-medium leading-snug text-white shadow-[0_10px_30px_rgba(10,132,255,0.22),inset_0_1px_0_rgba(255,255,255,0.28)] sm:max-w-[68%] md:max-w-[58%]"
+        class="max-w-[82%] rounded-[1.65rem] rounded-br-[0.7rem] border border-white/20 bg-primary px-4 py-2.5 text-[15px] font-medium leading-snug text-white shadow-[0_10px_30px_rgba(10,132,255,0.22),inset_0_1px_0_rgba(255,255,255,0.28)] sm:max-w-[68%] md:max-w-[58%]"
       >
         {{ t(message.content || '') }}
       </div>

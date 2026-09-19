@@ -2,7 +2,23 @@
 const { data: experiences } = await useAsyncData('experiences', async () => await queryCollection('experiences').all())
 
 const { t, locale } = useI18n({ useScope: 'global' })
-const formatDate = (date: string) => useDateFormat(new Date(date), 'MMM YYYY', { locales: locale.value ?? 'en' }).value
+function formatDate(date: string) {
+  const [yearStr, monthStr, dayStr] = date.split('-')
+  const year = Number(yearStr)
+  const month = monthStr ? Number(monthStr) : undefined
+  const day = dayStr ? Number(dayStr) : undefined
+
+  if (!year || Number.isNaN(year)) {
+    return null
+  }
+
+  if (!month) {
+    return String(year)
+  }
+
+  const format = day === undefined ? 'MMM YYYY' : 'D MMM YYYY'
+  return useDateFormat(new Date(year, month - 1, day ?? 1), format, { locales: locale.value ?? 'en' }).value
+}
 function getLanguageForText(text: { en: string, es: string, fr: string }) {
   return locale.value === 'en' ? text.en : locale.value === 'es' ? text.es : text.fr
 }

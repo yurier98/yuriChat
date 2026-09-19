@@ -98,8 +98,8 @@ const commandPaletteUi = {
   label: 'px-2 py-1.5 text-xs font-semibold text-neutral-500 dark:text-neutral-400',
   item: 'rounded-[1.25rem] p-2 text-neutral-700 before:rounded-[1.15rem] data-highlighted:not-data-disabled:text-neutral-950 data-highlighted:not-data-disabled:before:bg-white/65 data-highlighted:not-data-disabled:before:shadow-[inset_0_1px_0_rgba(255,255,255,0.65),0_8px_24px_rgba(15,23,42,0.08)] dark:text-neutral-300 dark:data-highlighted:not-data-disabled:text-white dark:data-highlighted:not-data-disabled:before:bg-white/[0.10] dark:data-highlighted:not-data-disabled:before:shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_8px_24px_rgba(0,0,0,0.18)]',
   itemLeadingIcon: 'text-neutral-500 group-data-highlighted:not-group-data-disabled:text-sky-500 dark:text-neutral-400 dark:group-data-highlighted:not-group-data-disabled:text-sky-400',
-  itemLabelBase: 'text-highlighted dark:text-white [&>mark]:rounded-md [&>mark]:bg-sky-500 [&>mark]:text-white',
-  itemLabelSuffix: 'text-neutral-500 dark:text-neutral-400 [&>mark]:rounded-md [&>mark]:bg-sky-500 [&>mark]:text-white',
+  itemLabelBase: 'text-highlighted dark:text-white [&>mark]:rounded-md [&>mark]:bg-primary [&>mark]:text-white',
+  itemLabelSuffix: 'text-neutral-500 dark:text-neutral-400 [&>mark]:rounded-md [&>mark]:bg-primary [&>mark]:text-white',
   footer: 'border-t border-black/10 bg-white/24 p-2 dark:border-white/10 dark:bg-white/[0.035]',
 }
 

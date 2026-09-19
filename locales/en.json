@@ -41,10 +41,6 @@
       "label": "Change theme",
       "prompt": "How can I change the theme?"
     },
-    "homelab": {
-      "label": "Homelab stuff",
-      "prompt": "How can I view the homelab of Yurier?"
-    },
     "hardware": {
       "label": "Hardware setup",
       "prompt": "How can I view the hardware setup of Yurier?"
@@ -56,10 +52,6 @@
     "ide": {
       "label": "IDEs and Font",
       "prompt": "Tell me more about the IDE and font that Yurier uses?"
-    },
-    "stats": {
-      "label": "Dev Statistics",
-      "prompt": "How can I view the statistics concerning Yurier?"
     },
     "weather": {
       "label": "Weather",
@@ -89,13 +81,13 @@
       "label": "Experiences",
       "prompt": "What experiences do you have in your career?"
     },
+    "education": {
+      "label": "Education and certifications",
+      "prompt": "What is your academic background and certifications?"
+    },
     "skills": {
       "label": "Skills",
       "prompt": "What are your skills?"
-    },
-    "status": {
-      "label": "Homelab status",
-      "prompt": "I saw you have a homelab, is it currently working?"
     },
     "resume": {
       "label": "Resume",
@@ -154,17 +146,6 @@
       "title": "⚠️ I have detected duplicated messages",
       "description": "I have therefore removed the older duplicated messages to lighten the application."
     },
-    "stats": {
-      "main": "I collect some data for {time} years, started the {date}. I've coded for a total of {hours} hours.",
-      "editors": "My top editors are {editors}",
-      "os": "My best OS is {os}",
-      "languages": "My favorite languages are {languages}",
-      "separator": " and ",
-      "tooltip": {
-        "date": "That was so long ago 🫣",
-        "hours": "That's a lot 😮"
-      }
-    },
     "theme": {
       "switch": "Switch theme",
       "light": "Light",
@@ -177,11 +158,28 @@
     },
     "weather": {
       "main": "Weather",
-      "powered_by": "Powered by OpenWeatherMap",
+      "powered_by": "Powered by Open-Meteo",
       "low": "Low",
       "high": "High",
       "humidity": "Humidity",
-      "wind": "Wind"
+      "feels_like": "Feels like",
+      "wind": "Wind",
+      "condition": {
+        "clear": "Clear",
+        "partlyCloudy": "Partly cloudy",
+        "cloudy": "Overcast",
+        "fog": "Fog",
+        "drizzle": "Drizzle",
+        "rain": "Rain",
+        "showers": "Showers",
+        "snow": "Snow",
+        "thunderstorm": "Thunderstorm",
+        "unknown": "No data"
+      },
+      "error": {
+        "title": "Couldn't load the weather",
+        "description": "Please try again"
+      }
     },
     "projects": {
       "main": "A selection of my projects developed in R, Python, and web development, covering diverse areas such as data analysis, machine learning, and web applications. These projects highlight my skills in coding, problem-solving, and solution design. {space}Here, I present the three projects I am most proud of, but you can explore all my projects directly in the {projects} page.",
@@ -210,11 +208,17 @@
         "pdf": "PDF file"
       }
     },
-    "homelab": "I have had a homelab for several years, presented in my article: {article}.{space}\nI have also set up a status page, {status}, to monitor the real-time state of my applications, allowing me to continuously test, monitor, and improve my projects.{space}\nThis experience has given me solid expertise in infrastructure, automation, and system administration, which I apply to both my personal and professional projects.",
     "skills": "As a software engineer and mathematics student, I combine scientific rigor with technical pragmatism to design solutions tailored to the challenges of data and mathematical projects. My approach focuses on a deep understanding of needs, from data preparation to deployment, while emphasizing modeling and performance optimization.Passionate about artificial intelligence and data science, I strive to balance innovation with statistical robustness. Always eager to learn, I explore both technological advancements and entrepreneurial or financial challenges. Curious and enthusiastic, I enjoy sharing knowledge and discovering new concepts, whether in theorems or emerging technologies.",
     "experiences": {
       "main": "Throughout my journey, I've had the opportunity to contribute to various projects — from student jobs and summer internships to self-taught experiences.\nEach one has deepened my practical understanding and strengthened my skills in statistics, software development, and data management, while exposing me to a range of technical environments.\nThey also taught me to work effectively in a team, while developing strong autonomy and adaptability.",
       "today": "Today"
+    },
+    "education": {
+      "main": "My academic background and professional certifications, from formal degrees to specialized courses.\nEach program has strengthened my foundations in computer science, agile methodologies, and software development.",
+      "degree": "Degree",
+      "certification": "Certification",
+      "course": "Course",
+      "credential": "View credential"
     }
   },
   "error": {

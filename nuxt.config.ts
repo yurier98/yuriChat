@@ -86,6 +86,11 @@ export default defineNuxtConfig({
     },
   },
 
+  // Nuxt SEO
+  seo: {
+    automaticTwitterTags: false,
+  },
+
   // Nuxt Color Mode
   colorMode: {
     preference: 'system',
@@ -161,16 +166,6 @@ export default defineNuxtConfig({
       userId: '',
       id: '',
       token: '',
-    },
-    wakatime: {
-      userId: '',
-      coding: '',
-      editors: '',
-      languages: '',
-      os: '',
-    },
-    openWeather: {
-      apiKey: '',
     },
     public: {
       i18n: {

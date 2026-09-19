@@ -5,15 +5,14 @@ import ToolActivity from '~/components/tool/Activity.vue'
 import ToolContact from '~/components/tool/Contact.vue'
 import ToolCredits from '~/components/tool/Credits.vue'
 import ToolDuplicated from '~/components/tool/Duplicated.vue'
+import ToolEducation from '~/components/tool/Education.vue'
 import ToolExperiences from '~/components/tool/Experiences.vue'
 import ToolHobbies from '~/components/tool/Hobbies.vue'
-import ToolHomeLab from '~/components/tool/HomeLab.vue'
 import ToolLanguage from '~/components/tool/Language.vue'
 import ToolLocation from '~/components/tool/Location.vue'
 import ToolProjects from '~/components/tool/Projects.vue'
 import ToolResume from '~/components/tool/Resume.vue'
 import ToolSkills from '~/components/tool/Skills.vue'
-import ToolStats from '~/components/tool/Stats.vue'
 import ToolTheme from '~/components/tool/Theme.vue'
 import ToolUsesProxy from '~/components/tool/UsesProxy.vue'
 import ToolWeather from '~/components/tool/Weather.vue'
@@ -32,10 +31,8 @@ const componentMap: Record<ChatType, Component | undefined> = {
   [ChatType.THEME]: ToolTheme,
   [ChatType.HARDWARE]: ToolUsesProxy,
   [ChatType.SOFTWARE]: ToolUsesProxy,
-  [ChatType.HOMELAB]: ToolUsesProxy,
   [ChatType.IDE]: ToolUsesProxy,
   [ChatType.LANGUAGE]: ToolLanguage,
-  [ChatType.STATS]: ToolStats,
   [ChatType.ACTIVITY]: ToolActivity,
   [ChatType.CONTACT]: ToolContact,
   [ChatType.WEATHER]: ToolWeather,
@@ -45,7 +42,7 @@ const componentMap: Record<ChatType, Component | undefined> = {
   [ChatType.WRITINGS]: ToolWritings,
   [ChatType.HOBBIES]: ToolHobbies,
   [ChatType.EXPERIENCES]: ToolExperiences,
-  [ChatType.STATUS]: ToolHomeLab,
+  [ChatType.EDUCATION]: ToolEducation,
   [ChatType.CREDITS]: ToolCredits,
   [ChatType.RESUME]: ToolResume,
 }

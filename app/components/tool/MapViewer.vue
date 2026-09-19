@@ -46,7 +46,7 @@ const longitudeHemisphere = computed(() => props.location.coordinates.longitude 
       <!-- Overlay con información -->
       <div class="absolute top-2 right-2 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-lg px-3 py-2 shadow-sm">
         <div class="flex items-center gap-2">
-          <UIcon name="i-ph-map-pin-duotone" class="text-blue-600 text-sm" />
+          <UIcon name="i-ph-map-pin-duotone" class="text-primary text-sm" />
           <span class="text-xs font-medium text-gray-700 dark:text-gray-300">
             {{ location.shortName }}
           </span>
@@ -60,7 +60,7 @@ const longitudeHemisphere = computed(() => props.location.coordinates.longitude 
         :href="fullMapUrl"
         target="_blank"
         rel="noopener noreferrer"
-        class="inline-flex items-center gap-2 px-3 py-2 text-xs bg-blue-100 hover:bg-blue-200 dark:bg-blue-900 dark:hover:bg-blue-800 text-blue-800 dark:text-blue-200 rounded-lg transition-colors"
+        class="inline-flex items-center gap-2 px-3 py-2 text-xs bg-primary/10 hover:bg-primary/20 text-primary rounded-lg transition-colors"
       >
         <UIcon name="i-ph-map-duotone" class="text-sm" />
         Ver en OpenStreetMap

@@ -4,7 +4,19 @@
 @plugin '@tailwindcss/typography';
 
 @theme static {
-  --animate-wave: wave 3s infinite
+  --animate-wave: wave 3s infinite;
+
+  --color-brand-50: #f4f7fb;
+  --color-brand-100: #e7f0f9;
+  --color-brand-200: #c6def6;
+  --color-brand-300: #97c7f7;
+  --color-brand-400: #51a5fb;
+  --color-brand-500: #0a84ff;
+  --color-brand-600: #0070e0;
+  --color-brand-700: #025bb6;
+  --color-brand-800: #064a8e;
+  --color-brand-900: #093d72;
+  --color-brand-950: #082949;
 }
 
 :root {
@@ -15,6 +27,7 @@
     --ui-bg: #f8f8f8;
 
     --ui-container: var(--container-6xl);
+    --ui-primary: var(--ui-color-primary-500);
 
     --ui-font-family: 'DM Sans', sans-serif;
     transition-duration: 0.7s;
@@ -32,6 +45,7 @@
     --ui-bg: #0a0a0a;
 
     --ui-container: var(--container-6xl);
+    --ui-primary: var(--ui-color-primary-500);
 
     --ui-font-family: 'DM Sans', sans-serif;
     transition-duration: 0.7s;

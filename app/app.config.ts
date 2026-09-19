@@ -1,6 +1,6 @@
 const controlMotion = [
   'transition-[background-color,border-color,box-shadow,color,transform] duration-200 ease-out',
-  'focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500/25',
+  'focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/25',
 ].join(' ')
 
 const buttonGlass = [
@@ -28,7 +28,7 @@ const inputGlassBase = [
 
 const inputGlassVariant = [
   'text-highlighted ring-1 ring-inset !bg-white/70 !ring-white/70',
-  'hover:!bg-white/80 focus:!bg-white/85 focus:ring-2 focus:!ring-sky-500/25',
+  'hover:!bg-white/80 focus:!bg-white/85 focus:ring-2 focus:!ring-primary/25',
   'dark:!bg-white/[0.08] dark:!ring-white/10 dark:hover:!bg-white/[0.12] dark:focus:!bg-white/[0.14]',
 ].join(' ')
 
@@ -46,7 +46,7 @@ export default defineAppConfig({
       base: 'max-w-3xl',
     },
     colors: {
-      primary: 'sky',
+      primary: 'brand',
       neutral: 'neutral',
     },
     fieldGroup: {
@@ -246,13 +246,18 @@ export default defineAppConfig({
       slots: {
         input: '[&>input]:rounded-[1.25rem] [&>input]:!bg-white/70 [&>input]:!ring-white/70 [&>input]:backdrop-blur-xl dark:[&>input]:!bg-white/[0.08] dark:[&>input]:!ring-white/10',
         item: roundedFloatingItem,
-        itemLabelBase: 'text-highlighted [&>mark]:rounded-md [&>mark]:bg-sky-500 [&>mark]:text-white',
-        itemLabelSuffix: 'text-dimmed [&>mark]:rounded-md [&>mark]:bg-sky-500 [&>mark]:text-white',
+        itemLabelBase: 'text-highlighted [&>mark]:rounded-md [&>mark]:bg-primary [&>mark]:text-white',
+        itemLabelSuffix: 'text-dimmed [&>mark]:rounded-md [&>mark]:bg-primary [&>mark]:text-white',
       },
     },
     card: {
       slots: {
         root: 'rounded-[1.6rem]',
+      },
+    },
+    alert: {
+      slots: {
+        root: 'rounded-[1rem]',
       },
     },
     modal: {
@@ -262,14 +267,14 @@ export default defineAppConfig({
     },
     switch: {
       slots: {
-        base: 'ring-1 ring-inset ring-white/70 data-[state=unchecked]:!bg-white/50 shadow-[inset_0_1px_0_rgb(255_255_255_/_0.55),0_8px_24px_rgb(15_23_42_/_0.10)] backdrop-blur-xl data-[state=checked]:!bg-sky-500 data-[state=checked]:!ring-sky-400/60 dark:ring-white/10 dark:data-[state=unchecked]:!bg-white/[0.08]',
-        thumb: '!bg-neutral-950 shadow-[0_3px_12px_rgb(15_23_42_/_0.24)] group-data-[state=checked]:!bg-sky-500 group-data-[state=checked]:shadow-[0_3px_14px_rgb(14_165_233_/_0.34)] dark:!bg-white dark:group-data-[state=checked]:!bg-sky-400',
+        base: 'ring-1 ring-inset ring-white/70 data-[state=unchecked]:!bg-white/50 shadow-[inset_0_1px_0_rgb(255_255_255_/_0.55),0_8px_24px_rgb(15_23_42_/_0.10)] backdrop-blur-xl data-[state=checked]:!bg-primary data-[state=checked]:!ring-primary/60 dark:ring-white/10 dark:data-[state=unchecked]:!bg-white/[0.08]',
+        thumb: '!bg-neutral-950 shadow-[0_3px_12px_rgb(15_23_42_/_0.24)] group-data-[state=checked]:!bg-primary group-data-[state=checked]:shadow-[0_3px_14px_rgb(10_132_255_/_0.34)] dark:!bg-white dark:group-data-[state=checked]:!bg-primary',
       },
       variants: {
         color: {
           primary: {
-            base: 'data-[state=checked]:!bg-sky-500 focus-visible:outline-sky-500',
-            icon: 'group-data-[state=checked]:text-sky-500',
+            base: 'data-[state=checked]:!bg-primary focus-visible:outline-primary',
+            icon: 'group-data-[state=checked]:text-primary',
           },
         },
       },

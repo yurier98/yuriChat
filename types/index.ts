@@ -1,9 +1,8 @@
 export * from './chat'
 export * from './lanyard'
 export * from './location'
-export * from './openweather'
 export * from './time'
-export * from './wakatime'
+export * from './weather'
 
 export const IDEs = [
   { name: 'Visual Studio Code', icon: 'i-logos:visual-studio-code' },
