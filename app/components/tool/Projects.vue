@@ -29,7 +29,7 @@ function projectRoute(project: any) {
 <template>
   <section>
     <div class="prose dark:prose-invert">
-      <i18n-t keypath="tool.projects.main" tag="p">
+      <i18n-t keypath="tool.projects.main" tag="p" scope="global">
         <template #projects>
           <UButton
             :label="t('tool.projects.link')"

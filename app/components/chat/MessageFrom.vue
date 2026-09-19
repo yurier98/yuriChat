@@ -75,7 +75,7 @@ const hasDynamicComponent = computed(() => Boolean(dynamicComponent.value))
             v-if="dynamicComponent"
             :type="message.type"
           />
-          <i18n-t v-else-if="message.type === ChatType.INIT" :keypath="message.content || ''" tag="div">
+          <i18n-t v-else-if="message.type === ChatType.INIT" :keypath="message.content || ''" tag="div" scope="global">
             <template #space>
               <br>
             </template>

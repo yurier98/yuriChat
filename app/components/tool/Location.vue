@@ -55,7 +55,7 @@ finally {
 <template>
   <section>
     <div class="prose dark:prose-invert mb-4">
-      <i18n-t keypath="tool.location" tag="p">
+      <i18n-t keypath="tool.location" tag="p" scope="global">
         <template #location>
           <strong>{{ locationData.city }}, {{ locationData.country }} {{ locationData.flag }}</strong>
         </template>

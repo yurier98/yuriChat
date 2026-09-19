@@ -118,7 +118,7 @@ const getActivity = computed(() => {
 
           <template #footer>
             <div class="flex justify-end text-sm">
-              <i18n-t keypath="tool.activity.started" tag="p">
+              <i18n-t keypath="tool.activity.started" tag="p" scope="global">
                 <template #ago>
                   {{ getActivity.start.ago }}
                 </template>
@@ -145,6 +145,7 @@ const getActivity = computed(() => {
       <i18n-t
         keypath="tool.activity.offline"
         tag="p"
+        scope="global"
         class="not-prose"
       >
         <template #maths>

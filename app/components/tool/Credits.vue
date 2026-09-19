@@ -6,7 +6,7 @@ const year = ref(useNow().value.getFullYear())
 
 <template>
   <section class="prose dark:prose-invert">
-    <i18n-t keypath="tool.credits.made">
+    <i18n-t keypath="tool.credits.made" scope="global">
       <template #nuxt>
         <UButton
           label="Nuxt Stack (Core, UI, I18n, Content)"
@@ -32,7 +32,7 @@ const year = ref(useNow().value.getFullYear())
     <p>{{ t('tool.credits.chat') }}</p>
     <p>{{ t('tool.credits.thank') }}</p>
     <p>{{ t('tool.credits.message') }}</p>
-    <i18n-t keypath="tool.credits.copyrights" tag="p">
+    <i18n-t keypath="tool.credits.copyrights" tag="p" scope="global">
       <template #year>
         {{ year }}
       </template>

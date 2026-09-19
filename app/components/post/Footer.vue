@@ -12,6 +12,7 @@ const { t } = useI18n({ useScope: 'global' })
     <i18n-t
       keypath="post.footer.thanks"
       tag="p"
+      scope="global"
       class="text-neutral-600 dark:text-neutral-400"
     >
       <template #comment>

@@ -8,7 +8,7 @@ const formatDate = (date: string) => useDateFormat(new Date(date), 'DD MMMM YYYY
 <template>
   <section>
     <div class="prose dark:prose-invert">
-      <i18n-t keypath="tool.writings.main" tag="p">
+      <i18n-t keypath="tool.writings.main" tag="p" scope="global">
         <template #writings>
           <UButton
             :label="t('tool.writings.link')"

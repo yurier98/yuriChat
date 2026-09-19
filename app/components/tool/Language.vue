@@ -11,7 +11,7 @@ const { changeLocale } = useLanguage()
       <p>{{ t('tool.language.response.control') }}</p>
       <ul>
         <li>{{ t('tool.language.response.choose') }}</li>
-        <i18n-t keypath="tool.language.response.kbd" tag="li">
+        <i18n-t keypath="tool.language.response.kbd" tag="li" scope="global">
           <template #kbd>
             <UKbd>L</UKbd>
           </template>

@@ -9,7 +9,7 @@ const { dark, toggleDark } = useTheme()
       <p>{{ t('tool.theme.response.control') }}</p>
       <ul>
         <li>{{ t('tool.theme.response.choose') }}</li>
-        <i18n-t keypath="tool.theme.response.kbd" tag="li">
+        <i18n-t keypath="tool.theme.response.kbd" tag="li" scope="global">
           <template #kbd>
             <UKbd>T</UKbd>
           </template>
