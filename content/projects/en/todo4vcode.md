@@ -2,7 +2,7 @@
 slug: todo4vcode
 locale: en
 title: ToDo4VCode
-description: Task management extension for VS Code and compatible editors, created to plan, prioritize, and connect tasks with code without leaving the development environment.
+description: Task management extension for VS Code and compatible editors, to plan, prioritize, and connect tasks with code without leaving your editor.
 publishedAt: 2025/12/31
 readingTime: 5
 cover: todo4vcode/cover.webp

@@ -14,7 +14,17 @@ if (!writing.value) {
 
 const { t, locale } = useI18n({ useScope: 'global' })
 
-useSeoMeta(writing.value.seo || {})
+// The title MUST be set explicitly: without it the head falls back to a
+// slug-derived title ("Rag Ai Agents"), not the article's real title.
+// No " — Yurier Herrera" suffix here on purpose: article titles are long and
+// Google truncates near 60 characters, so the name would land past the cut and
+// buy nothing. The name still reaches search via the schema.org identity,
+// og:site_name and the site title. (Project pages DO get the suffix — their
+// titles are short.)
+useSeoMeta({
+  title: () => writing.value?.title,
+  description: () => writing.value?.description,
+})
 </script>
 
 <template>

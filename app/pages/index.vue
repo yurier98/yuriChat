@@ -3,7 +3,7 @@ import { ChatSender, ChatState, ChatType } from '~~/types'
 
 useSeoMeta({
   title: 'Yurier Herrera — Software Engineer & Entrepreneur',
-  description: 'Software engineer and entrepreneur. UX-obsessed digital products, AI and automation applied to business processes. Open to collaborating with companies and entrepreneurs.',
+  description: 'Software engineer and entrepreneur. UX-obsessed digital products, AI and automation for business processes. Open to collaborating.',
 })
 
 const { messages } = useChatStore()

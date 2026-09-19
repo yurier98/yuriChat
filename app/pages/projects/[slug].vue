@@ -27,7 +27,7 @@ if (!project.value) {
 useSeoMeta(() => project.value?.seo || {})
 
 useSeoMeta({
-  title: () => project.value?.title,
+  title: () => `${project.value?.title} — Yurier Herrera`,
   description: () => project.value?.description,
   author: 'Yurier Herrera',
 })
