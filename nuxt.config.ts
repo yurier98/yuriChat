@@ -1,7 +1,10 @@
 import process from 'node:process'
 import { definePerson } from 'nuxt-schema-org/schema'
 
-const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://yurier98.github.io'
+// Real production domain (Vercel). Was previously defaulting to
+// yurier98.github.io, which serves a stale copy of this portfolio — pointing the
+// canonical there told Google the real page lived on that old build.
+const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://yurierherrera.vercel.app'
 const nitroPreset = process.env.NITRO_PRESET || 'vercel'
 
 export default defineNuxtConfig({
