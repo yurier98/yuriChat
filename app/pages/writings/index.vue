@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const { t } = useI18n({ useScope: 'global' })
+const { t, locale } = useI18n({ useScope: 'global' })
 useSeoMeta({
   title: 'Writings — Yurier Herrera',
   description: 'Essays and technical writings by Yurier Herrera on software engineering, AI, and digital products.',
@@ -57,7 +57,7 @@ const groupedWritings = computed(() => {
                   class="text-sm text-neutral-500 duration-300 flex items-center gap-1"
                 >
                   <ClientOnly>
-                    <p>{{ useDateFormat(writing.publishedAt, 'DD MMM').value }} </p>
+                    <p>{{ useDateFormat(writing.publishedAt, 'DD MMM', { locales: locale }).value }} </p>
                   </ClientOnly>
                   <span>·</span>
                   <p>{{ writing.readingTime }}min</p>

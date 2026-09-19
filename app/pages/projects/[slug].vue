@@ -53,7 +53,7 @@ useSeoMeta({
           class="text-sm text-neutral-500 duration-300 flex items-center gap-2"
         >
           <UIcon name="ph:calendar-duotone" size="16" />
-          <p>{{ useDateFormat(project.publishedAt, 'DD MMMM YYYY').value }} </p>
+          <p>{{ useDateFormat(project.publishedAt, 'DD MMMM YYYY', { locales: locale }).value }} </p>
           <PostShare :title="project.title" />
         </div>
       </div>

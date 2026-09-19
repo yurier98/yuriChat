@@ -75,7 +75,7 @@ function projectRoute(project: any) {
               class="text-sm text-neutral-500 duration-300 flex items-center gap-1 group-hover:text-neutral-600 dark:group-hover:text-neutral-300"
             >
               <ClientOnly>
-                <p>{{ useDateFormat(project.publishedAt, 'DD MMM YYYY').value }} </p>
+                <p>{{ useDateFormat(project.publishedAt, 'DD MMM YYYY', { locales: locale }).value }} </p>
               </ClientOnly>
               <span class="w-2" />
               <div class="flex gap-2 flex-wrap">

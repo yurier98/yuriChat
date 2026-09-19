@@ -12,7 +12,7 @@ if (!writing.value) {
   })
 }
 
-const { t } = useI18n({ useScope: 'global' })
+const { t, locale } = useI18n({ useScope: 'global' })
 
 useSeoMeta(writing.value.seo || {})
 </script>
@@ -37,7 +37,7 @@ useSeoMeta(writing.value.seo || {})
           class="text-sm text-neutral-500 duration-300 flex items-center gap-2"
         >
           <UIcon name="ph:calendar-duotone" size="16" />
-          <p>{{ useDateFormat(writing.publishedAt, 'DD MMMM YYYY').value }} </p>
+          <p>{{ useDateFormat(writing.publishedAt, 'DD MMMM YYYY', { locales: locale }).value }} </p>
           <PostShare :title="writing.title" />
         </div>
       </div>
