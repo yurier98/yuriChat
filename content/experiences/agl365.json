@@ -1,0 +1,37 @@
+{
+  "title": {
+    "en": "Fullstack & Mobile Developer",
+    "es": "Desarrollador Fullstack & Mobile"
+  },
+  "company": "AGL 365",
+  "startDate": "2026-01",
+  "endDate": "2026-03",
+  "location": "Remoto, Las Vegas, EEUU",
+  "highlights": [
+    {
+      "en": "UX/UI and Frontend Designer: I conceptualized and designed the complete visual architecture of the website using Figma for a lead-generation project for small businesses, ensuring an intuitive user experience.",
+      "es": "Diseñador UX/UI y Frontend: conceptualicé y diseñé la arquitectura visual completa del sitio web utilizando Figma de un proyecto para la captación de leads para pequeños negocios, asegurando una experiencia de usuario intuitiva."
+    },
+    {
+      "en": "I then translated these designs into functional code using Vue.js with the Nuxt framework, guaranteeing a reactive, high-performance interface and good SEO practices.",
+      "es": "Posteriormente, traduje estos diseños a código funcional utilizando Vue.js, con el framework Nuxt, garantizando una interfaz reactiva, de alto rendimiento y buenas prácticas de SEO."
+    },
+    {
+      "en": "Backend Development and Lead Generation: I developed the server-side logic to support the web infrastructure, focusing on building landing pages optimized for lead generation.",
+      "es": "Desarrollo Backend y Captación: desarrollé la lógica del lado del servidor para soportar la infraestructura web, enfocándome en la creación de landing pages optimizadas para la captación de leads."
+    },
+    {
+      "en": "I ensured continuous deployments of the project on the AWS infrastructure.",
+      "es": "Garanticé los despliegues continuos del proyecto bajo la infraestructura de AWS."
+    },
+    {
+      "en": "Process Automation: I implemented automation tools for the sales funnel and data management within the website, improving operational efficiency and prospect tracking.",
+      "es": "Automatización de Procesos: implementé herramientas de automatización para el embudo de ventas y la gestión de datos dentro del sitio web, mejorando la eficiencia operativa y el seguimiento de prospectos."
+    },
+    {
+      "en": "Mobile Development (iOS): I designed and developed a native mobile application using Swift. This tool allows users to remotely and securely interact with the ecosystem's administrative panel, facilitating real-time management and interaction with the system through intelligent voice commands using the Apple Intelligence SDKs.",
+      "es": "Desarrollo Mobile (iOS): diseñé y desarrollé una aplicación móvil nativa utilizando Swift. Esta herramienta permite a los usuarios interactuar de forma remota y segura con el panel administrativo del ecosistema, facilitando la gestión en tiempo real y la interacción con el sistema desde comandos de voz inteligentes utilizando los SDK de Apple Intelligence."
+    }
+  ],
+  "tags": ["Figma", "Vue.js", "Nuxt", "AWS", "Swift", "Apple Intelligence"]
+}

@@ -1,0 +1,30 @@
+{
+  "title": {
+    "en": "Fullstack Developer & AI Specialist",
+    "es": "Desarrollador Fullstack & Especialista en IA"
+  },
+  "company": "Parque Científico Tecnológico de la Habana",
+  "companyUrl": "https://www.3ce.cu",
+  "startDate": "2025-01",
+  "endDate": "2025-05",
+  "location": "La Habana, Cuba",
+  "highlights": [
+    {
+      "en": "I developed a peer-review model for the feasibility analysis of projects to be incubated at the Parque Científico Tecnológico de la Habana, which allowed the Park's Scientific Advisory Council to make quick, well-founded decisions based on the feasibility analyses of the project proposals to be incubated in the institution's ecosystem.",
+      "es": "Desarrollé un modelo de revisión por pares para el análisis de factibilidad de proyectos a incubar en el Parque Científico Tecnológico de la Habana, el cual permitió al Consejo Científico Asesor del Parque tomar decisiones rápidas y fundamentadas en los análisis de factibilidad de las propuestas de proyectos a incubar en el ecosistema de la institución."
+    },
+    {
+      "en": "I developed and integrated Retrieval-Augmented Generation (RAG) systems using Supabase as a vector database, enabling the efficient storage and retrieval of embeddings for precise contextual responses.",
+      "es": "Desarrollé e integré sistemas de Generación Aumentada por Recuperación (RAG) utilizando Supabase como base de datos vectorial, permitiendo el almacenamiento y la recuperación eficiente de embeddings para respuestas contextuales precisas."
+    },
+    {
+      "en": "I led the Prompt Engineering phase to optimize the interaction between the user and the LLMs, ensuring the system's responses maintained high standards of relevance, technical accuracy and coherence.",
+      "es": "Lideré la fase de Ingeniería de Prompts para optimizar la interacción entre el usuario y los LLMs, garantizando que las respuestas del sistema mantuvieran altos estándares de relevancia, precisión técnica y coherencia."
+    },
+    {
+      "en": "I implemented AI workflows that connect the reactive frontend with real-time databases, facilitating a smooth user experience when processing large volumes of technical information.",
+      "es": "Implementé flujos de trabajo de IA que conectan el frontend reactivo con bases de datos en tiempo real, facilitando una experiencia de usuario fluida en el procesamiento de grandes volúmenes de información técnica."
+    }
+  ],
+  "tags": ["RAG", "Supabase", "LLM", "Prompt Engineering"]
+}

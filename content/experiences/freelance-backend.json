@@ -1,0 +1,29 @@
+{
+  "title": {
+    "en": "Backend Developer",
+    "es": "Desarrollador Backend"
+  },
+  "company": "Freelancer",
+  "startDate": "2025-03",
+  "endDate": "2025-05",
+  "location": "La Habana, Cuba",
+  "highlights": [
+    {
+      "en": "I designed and implemented the backend architecture of a remittance system with Django and Django REST Framework, prioritizing scalability, high performance and security to guarantee reliable and efficient financial operations.",
+      "es": "Diseñé e implementé la arquitectura backend de un sistema de remesas con Django y Django REST Framework, priorizando la escalabilidad, el alto rendimiento y la seguridad para garantizar operaciones financieras confiables y eficientes."
+    },
+    {
+      "en": "I developed and managed a secure and efficient RESTful API for processing financial transactions, implementing JWT authentication and robust transaction handling to guarantee integrity and availability in critical operations.",
+      "es": "Desarrollé y gestioné una API RESTful segura y eficiente para el procesamiento de transacciones financieras, implementando autenticación JWT y un manejo robusto de transacciones para garantizar integridad y disponibilidad en operaciones críticas."
+    },
+    {
+      "en": "I applied security and encryption best practices to guarantee maximum protection of sensitive data and the integrity of all operations.",
+      "es": "Apliqué mejores prácticas de seguridad y encriptación para garantizar la máxima protección de datos sensibles y la integridad de todas las operaciones."
+    },
+    {
+      "en": "This experience strengthened my technical expertise in developing financial systems, consolidating skills in security, scalability and handling complex transactions.",
+      "es": "Esta experiencia fortaleció mi expertise técnico en el desarrollo de sistemas financieros, consolidando habilidades en seguridad, escalabilidad y manejo de transacciones complejas."
+    }
+  ],
+  "tags": ["Django", "Django REST Framework", "JWT", "REST API"]
+}

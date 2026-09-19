@@ -1,0 +1,34 @@
+{
+  "title": {
+    "en": "Project Manager",
+    "es": "Project Manager"
+  },
+  "company": "Parque Científico Tecnológico de la Habana",
+  "companyUrl": "https://www.3ce.cu",
+  "startDate": "2024-04",
+  "endDate": "2025-10",
+  "location": "La Habana, Cuba",
+  "highlights": [
+    {
+      "en": "I lead a multidisciplinary agile team of 5 people through the complete life cycle of the GoYRENT project, an innovative platform for rental management.",
+      "es": "Lidero un equipo ágil multidisciplinario de 5 personas en el ciclo de vida completo del proyecto GoYRENT, una plataforma innovadora para la gestión de alquileres."
+    },
+    {
+      "en": "I plan and execute the project by applying agile and hybrid methodologies, optimizing workflows to guarantee the delivery of high-quality products.",
+      "es": "Planifico y ejecuto el proyecto aplicando metodologías ágiles e híbridas, optimizando los flujos de trabajo para garantizar la entrega de productos de alta calidad."
+    },
+    {
+      "en": "I manage and prioritize the product backlog, collaborating closely on user experience (UX) design to ensure an intuitive platform aligned with the end user's needs.",
+      "es": "Gestiono y priorizo el backlog del producto, colaborando estrechamente en el diseño de la experiencia de usuario (UX) para asegurar una plataforma intuitiva y alineada con las necesidades del usuario final."
+    },
+    {
+      "en": "I lead project monitoring and control using tools such as OpenProject and GitHub, facilitating collaboration, transparency and effective communication.",
+      "es": "Dirijo el seguimiento y control del proyecto utilizando herramientas como OpenProject y GitHub, facilitando la colaboración, la transparencia y una comunicación efectiva."
+    },
+    {
+      "en": "I foster a continuous-improvement work environment, applying emotional intelligence and problem-solving skills to keep the team proactive and high-performing.",
+      "es": "Fomento un entorno de trabajo de mejora continua, aplicando inteligencia emocional y habilidades de resolución de problemas para mantener un equipo proactivo y de alto rendimiento."
+    }
+  ],
+  "tags": ["Scrum", "OpenProject", "GitHub", "UX"]
+}

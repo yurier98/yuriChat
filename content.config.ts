@@ -95,11 +95,8 @@ export default defineContentConfig({
         startDate: z.string(),
         endDate: z.string().optional(),
         location: z.string(),
-        description: z.object({
-          en: z.string(),
-          es: z.string(),
-        }),
-        tags: z.array(z.string()),
+        highlights: z.array(z.object({ en: z.string(), es: z.string() })),
+        tags: z.array(z.string()).optional(),
       }),
     }),
     education: defineCollection({

@@ -1,0 +1,30 @@
+{
+  "title": {
+    "en": "Lecturer in IT Project Management",
+    "es": "Profesor de Gestión de Proyectos Informáticos"
+  },
+  "company": "Universidad de las Ciencias Informáticas",
+  "companyUrl": "https://www.uci.cu",
+  "startDate": "2023-01",
+  "endDate": "2026-01",
+  "location": "La Habana, Cuba",
+  "highlights": [
+    {
+      "en": "I designed and taught the Project Management program, training students in PMI standards and best practices and the PMBOK framework for managing the complete project life cycle.",
+      "es": "Diseñé e impartí el programa de Gestión de Proyectos, formando a estudiantes en los estándares y mejores prácticas del PMI y el marco del PMBOK para la gestión del ciclo de vida completo de proyectos."
+    },
+    {
+      "en": "I taught the application of agile methodologies, with a practical focus on SCRUM, for project management in dynamic and iterative environments.",
+      "es": "Instruí en la aplicación de metodologías ágiles, con un enfoque práctico en SCRUM, para la gestión de proyectos en entornos dinámicos e iterativos."
+    },
+    {
+      "en": "I trained students in the use of tools and techniques for project planning, execution, control and closure, ensuring an understanding of the critical success variables.",
+      "es": "Capacité en el uso de herramientas y técnicas para la planificación, ejecución, control y cierre de proyectos, asegurando el entendimiento de las variables críticas de éxito."
+    },
+    {
+      "en": "I fostered the key values and skills of a Project Manager: leadership, effective communication, critical thinking, stakeholder management and professional ethics, preparing students for the real challenges of the workplace.",
+      "es": "Fomenté los valores y habilidades clave de un Project Manager: liderazgo, comunicación efectiva, pensamiento crítico, gestión de stakeholders y ética profesional, preparando a los estudiantes para los desafíos reales del entorno laboral."
+    }
+  ],
+  "tags": ["PMI", "PMBOK", "SCRUM"]
+}

@@ -1,0 +1,25 @@
+{
+  "title": {
+    "en": "UI Designer",
+    "es": "UI Designer"
+  },
+  "company": "JustShip (Proyecto Comunitario)",
+  "startDate": "2021-09",
+  "endDate": "2022-01",
+  "location": "La Habana, Cuba",
+  "highlights": [
+    {
+      "en": "I collaborated on an agile community project focused on empowering developers and designers to build and launch product ideas quickly.",
+      "es": "Colaboré en un proyecto comunitario ágil enfocado en potenciar a desarrolladores y diseñadores para construir y lanzar ideas de producto de forma rápida."
+    },
+    {
+      "en": "I designed the platform's user interfaces, working in coordination with a multidisciplinary community team.",
+      "es": "Diseñé las interfaces de usuario de la plataforma, trabajando de manera coordinada con un equipo multidisciplinario de la comunidad."
+    },
+    {
+      "en": "I gained hands-on experience in an agile, community-centered development environment, understanding the dynamics to accelerate turning ideas into minimum viable products (MVP).",
+      "es": "Adquirí experiencia práctica en un entorno de desarrollo ágil y centrado en la comunidad, comprendiendo las dinámicas para acelerar la materialización de ideas en productos mínimos viables (MVP)."
+    }
+  ],
+  "tags": ["MVP"]
+}

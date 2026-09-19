@@ -1,0 +1,30 @@
+{
+  "title": {
+    "en": "UX/UI Designer",
+    "es": "UX/UI Designer"
+  },
+  "company": "Parque Científico Tecnológico de la Habana",
+  "companyUrl": "https://www.3ce.cu",
+  "startDate": "2023-12",
+  "endDate": "2024-01",
+  "location": "La Habana, Cuba",
+  "highlights": [
+    {
+      "en": "I designed the user experience (UX) and interface (UI) for a national platform for managing Science, Technology and Innovation programs, prioritizing the creation of an intuitive, functional, user-centered product.",
+      "es": "Diseñé la experiencia de usuario (UX) e interfaz (UI) para una plataforma nacional de gestión de programas de Ciencia, Tecnología e Innovación, priorizando la creación de un producto intuitivo, funcional y centrado en el usuario."
+    },
+    {
+      "en": "I collaborated closely with multidisciplinary teams (developers, analysts) to translate complex requirements into clear navigation flows and effective data visualization tools.",
+      "es": "Colaboré estrechamente con equipos multidisciplinarios (desarrolladores, analistas) para traducir requisitos complejos en flujos de navegación claros y herramientas efectivas de visualización de datos."
+    },
+    {
+      "en": "I applied Design Thinking methodologies and conducted usability testing to iterate on the design, ensuring the platform not only met the technical objectives but also offered an efficient and satisfying experience for professional managers.",
+      "es": "Apliqué metodologías de Design Thinking y realicé pruebas de usabilidad para iterar el diseño, garantizando que la plataforma no solo cumpliera con los objetivos técnicos, sino que también ofreciera una experiencia eficiente y satisfactoria para los gestores profesionales."
+    },
+    {
+      "en": "This role allowed me to develop deep empathy for the user and a practical understanding of how strategic design drives product adoption and effectiveness, fundamental skills for defining the product vision and prioritizing features.",
+      "es": "Este rol me permitió desarrollar una profunda empatía por el usuario y una comprensión práctica de cómo el diseño estratégico impulsa la adopción y eficacia de un producto, habilidades fundamentales para la definición de la visión de producto y la priorización de features."
+    }
+  ],
+  "tags": ["Design Thinking", "Usability Testing"]
+}

@@ -1,0 +1,25 @@
+{
+  "title": {
+    "en": "UX/UI Designer",
+    "es": "UX/UI Designer"
+  },
+  "company": "Freelancer",
+  "startDate": "2025-09",
+  "endDate": "2025-11",
+  "location": "La Habana, Cuba",
+  "highlights": [
+    {
+      "en": "I led user research and flow design to create an intuitive experience in a multi-feature environment (top-ups, promotions, user management and sales).",
+      "es": "Lideré la investigación de usuario y el diseño de flujos para crear una experiencia intuitiva en un entorno de múltiples funcionalidades (recargas, promociones, gestión de usuarios y ventas)."
+    },
+    {
+      "en": "I designed and prototyped the complete application interface in Figma, including the product management, promotions and user modules and the sales dashboard.",
+      "es": "Diseñé y prototipé en Figma la interfaz completa de la aplicación, incluyendo los módulos de gestión de productos, promociones, usuarios y el dashboard de ventas."
+    },
+    {
+      "en": "I created a consistent design system that unified the visual and functional experience across all application modules.",
+      "es": "Creé un sistema de diseño consistente que unificó la experiencia visual y funcional en todos los módulos de la aplicación."
+    }
+  ],
+  "tags": ["Figma", "Design System"]
+}

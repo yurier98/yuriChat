@@ -1,0 +1,29 @@
+{
+  "title": {
+    "en": "Project Manager",
+    "es": "Project Manager"
+  },
+  "company": "Universidad de las Ciencias Informáticas",
+  "companyUrl": "https://www.uci.cu",
+  "startDate": "2023-03",
+  "endDate": "2023-12",
+  "location": "La Habana, Cuba",
+  "highlights": [
+    {
+      "en": "I led the complete development life cycle of a web-based loan management system, from conception and design to successful implementation.",
+      "es": "Lideré el ciclo de vida completo del desarrollo de un sistema web de gestión de préstamos, desde la concepción y el diseño hasta la implementación exitosa."
+    },
+    {
+      "en": "I collaborated closely with a multidisciplinary team of developers and analysts to translate stakeholder requirements into a functional solution that optimized the efficiency of the loan process.",
+      "es": "Colaboré estrechamente con un equipo multidisciplinario de desarrolladores y analistas para traducir los requisitos de los stakeholders en una solución funcional que optimizó la eficiencia del proceso de préstamos."
+    },
+    {
+      "en": "I led the system architecture decisions, ensuring the technical design met the established objectives and the needs of the administrative staff and the university community.",
+      "es": "Lideré las decisiones de arquitectura del sistema, garantizando que el diseño técnico cumpliera con los objetivos establecidos y las necesidades del personal administrativo y la comunidad universitaria."
+    },
+    {
+      "en": "We achieved a significant impact at the university by simplifying management and notably improving resource administration.",
+      "es": "Logramos un impacto significativo en la universidad mediante la simplificación de la gestión y la mejora notable en la administración de recursos."
+    }
+  ]
+}

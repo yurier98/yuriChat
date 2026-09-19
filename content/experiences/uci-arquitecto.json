@@ -1,0 +1,34 @@
+{
+  "title": {
+    "en": "Architect, Developer, Designer and QA/FA",
+    "es": "Arquitecto, Desarrollador, Diseñador y QA/FA"
+  },
+  "company": "Universidad de las Ciencias Informáticas",
+  "companyUrl": "https://www.uci.cu",
+  "startDate": "2022-05",
+  "endDate": "2022-12",
+  "location": "La Habana, Cuba",
+  "highlights": [
+    {
+      "en": "I led the complete life cycle of the Loan Management System (GEPRE), comprehensively performing the roles of Architect, Analyst, Full-Stack Developer, UX/UI Designer and QA.",
+      "es": "Lideré el ciclo de vida completo del Sistema de Gestión de Préstamos (GEPRE), desempeñando de manera integral los roles de Arquitecto, Analista, Desarrollador Full-Stack, Diseñador UX/UI y QA."
+    },
+    {
+      "en": "As Analyst and Designer, I elicited and documented requirements through effective communication with stakeholders, modeled business processes and designed wireframes and prototypes to align the technical solution with user needs.",
+      "es": "Como Analista y Diseñador, elicité y documenté requisitos mediante una comunicación efectiva con stakeholders, modelé procesos de negocio y diseñé wireframes y prototipos para alinear la solución técnica con las necesidades del usuario."
+    },
+    {
+      "en": "As Architect and Developer, I designed and developed the end-to-end technical solution, applying design patterns, best practices and agile methodologies to guarantee a robust and maintainable system.",
+      "es": "Como Arquitecto y Desarrollador, diseñé y desarrollé la solución técnica end-to-end, aplicando patrones de diseño, mejores prácticas y metodologías ágiles para garantizar un sistema robusto y mantenible."
+    },
+    {
+      "en": "As QA, I designed and executed functional tests, validating compliance with the requirements and ensuring the quality of the final product before delivery.",
+      "es": "Como QA, diseñé y ejecuté pruebas funcionales, validando el cumplimiento de los requerimientos y asegurando la calidad del producto final antes de su entrega."
+    },
+    {
+      "en": "This experience gave me a holistic and deep view of software development, consolidating a solid foundation for product management, technical prioritization and effective communication between technical and business teams.",
+      "es": "Esta experiencia me proporcionó una visión holística y profunda del desarrollo de software, consolidando una base sólida para la gestión de productos, la priorización técnica y la comunicación efectiva entre equipos técnicos y de negocio."
+    }
+  ],
+  "tags": ["Design Patterns", "UX"]
+}
