@@ -8,7 +8,6 @@ const formatDate = (date: string) => useDateFormat(new Date(date), 'DD MMMM YYYY
 <template>
   <section>
     <div class="prose dark:prose-invert">
-      <PostAlert class="mb-2" />
       <i18n-t keypath="tool.writings.main" tag="p">
         <template #writings>
           <UButton

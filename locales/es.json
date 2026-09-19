@@ -93,18 +93,6 @@
     "credits": {
       "label": "Créditos",
       "prompt": "¿Cómo se ha hecho este chat?"
-    },
-    "hardware": {
-      "label": "Hardware",
-      "prompt": "¿Cómo puedo ver la configuración de hardware de Yurier?"
-    },
-    "ide": {
-      "label": "IDEs y fuente",
-      "prompt": "¿Cuéntame más sobre el IDE y la fuente que usa Yurier?"
-    },
-    "software": {
-      "label": "Softwares y aplicaciones",
-      "prompt": "¿Qué software y aplicaciones usa Yurier?"
     }
   },
   "chat": {
@@ -236,7 +224,7 @@
     },
     "top": "Ir arriba"
   },
-  "alert": "Por falta de tiempo, no tuve tiempo para traducir este contenido al francés. Gracias por su comprensión.",
+  "alert": "Este contenido está escrito en inglés.",
   "writings": {
     "description": "Todas mis reflexiones sobre programación, inteligencia artificial, producto y emprendimiento están organizadas en orden cronológico.",
     "title": "Escritos sobre desarrollo de software, inteligencia artificial, producto y emprendimiento.",

@@ -1,5 +1,6 @@
 ---
 slug: ar-viewer
+locale: es
 title: AR Viewer
 description: Cómo creé una aplicación que mostraba imágenes y videos cuando detectaba códigos ArUco, para mi asignatura de aprendizaje automático.
 publishedAt: 2022/05/01

@@ -29,7 +29,6 @@ function projectRoute(project: any) {
 <template>
   <section>
     <div class="prose dark:prose-invert">
-      <PostAlert class="mb-2" />
       <i18n-t keypath="tool.projects.main" tag="p">
         <template #projects>
           <UButton

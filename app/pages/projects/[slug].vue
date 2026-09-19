@@ -71,7 +71,7 @@ useSeoMeta({
         class="w-full rounded-md my-8"
       />
     </div>
-    <PostAlert class="mb-8 font-bold" />
+    <PostAlert class="mb-8 font-bold" :content-locale="project.locale ?? 'es'" />
     <USeparator
       class="my-4"
       icon="i-ph-pencil-line-duotone"

@@ -54,7 +54,7 @@ useSeoMeta(writing.value.seo || {})
         label="Project cover"
       />
     </div>
-    <PostAlert class="my-8 font-bold" />
+    <PostAlert class="my-8 font-bold" :content-locale="writing.locale" />
     <USeparator
       class="my-4"
       icon="i-ph-pencil-line-duotone"

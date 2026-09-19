@@ -30,7 +30,6 @@ const groupedWritings = computed(() => {
       :description="t('writings.description')"
       :title="t('writings.title')"
     />
-    <PostAlert class="font-bold" />
     <div class="space-y-8">
       <div v-for="year in groupedWritings" :key="year[0]" class="lg:space-y-6 relative">
         <h2 class="text-4xl lg:absolute top-2 -left-16 font-bold opacity-10 select-none pointer-events-none lg:[writing-mode:vertical-rl] lg:[text-orientation:upright] pl-1 lg:pl-0">

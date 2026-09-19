@@ -1,5 +1,6 @@
 ---
 slug: arquitectura-multiagente-factibilidad
+locale: es
 title: "Arquitectura Multiagente para la Factibilidad de Proyectos: Diseño de un Sistema de Agentes Inteligentes con Orquestador"
 description: Una propuesta híbrida, académica y de ingeniería, para diseñar un sistema multiagente donde cada agente especializa sus skills y tools según el dominio del proyecto, coordinados por un orquestador central que garantiza rigor, trazabilidad y extensibilidad.
 readingTime: 9

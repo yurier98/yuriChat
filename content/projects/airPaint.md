@@ -1,5 +1,6 @@
 ---
 slug: airpaint-vision-computadora-dibujo-aire-ninos
+locale: es
 title: AirPaint
 description: Desarrollo de una aplicación de dibujo en aire que permite a niños crear arte digital mediante gestos de las manos.
 publishedAt: 2024/06/01

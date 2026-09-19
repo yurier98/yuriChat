@@ -27,6 +27,7 @@ export default defineContentConfig({
       source: 'writings/*.md',
       schema: z.object({
         slug: z.string(),
+        locale: z.enum(['en', 'es']),
         title: z.string(),
         description: z.string(),
         publishedAt: z.string(),
@@ -37,29 +38,6 @@ export default defineContentConfig({
         sitemap: defineSitemapSchema(),
         ogImage: defineOgImageSchema(),
         schemaOrg: defineSchemaOrgSchema(),
-      }),
-    }),
-    usesCategories: defineCollection({
-      type: 'data',
-      source: 'uses/categories/*.json',
-      schema: z.object({
-        slug: z.string(),
-        name: z.object({
-          en: z.string(),
-          es: z.string(),
-        }),
-      }),
-    }),
-    uses: defineCollection({
-      type: 'data',
-      source: 'uses/*.json',
-      schema: z.object({
-        name: z.string(),
-        description: z.object({
-          en: z.string(),
-          es: z.string(),
-        }),
-        category: z.string(),
       }),
     }),
     skills: defineCollection({

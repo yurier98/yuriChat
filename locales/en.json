@@ -41,18 +41,6 @@
       "label": "Change theme",
       "prompt": "How can I change the theme?"
     },
-    "hardware": {
-      "label": "Hardware setup",
-      "prompt": "How can I view the hardware setup of Yurier?"
-    },
-    "software": {
-      "label": "Softwares and Apps",
-      "prompt": "Which softwares and apps does Yurier use?"
-    },
-    "ide": {
-      "label": "IDEs and Font",
-      "prompt": "Tell me more about the IDE and font that Yurier uses?"
-    },
     "weather": {
       "label": "Weather",
       "prompt": "How can I view the weather conditions near Yurier?"
@@ -224,7 +212,7 @@
     "main": "I think you're lost, let's go back to the",
     "redirect": "homepage"
   },
-  "alert": "For lack of time, I did not have time to translate this content into English. Thank you for your understanding.",
+  "alert": "This content is only available in Spanish for now.",
   "post": {
     "footer": {
       "thanks": "Thanks for reading! My name is {name} and I love writing about artificial intelligence, software development and product. {jump} I've been coding and building products for years, and I learn something new every day. {jump} I share what I learn here because clear, hands-on resources matter. {jump} I hope you found this useful. If you did, {comment} — it really helps!",

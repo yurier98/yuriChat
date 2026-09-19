@@ -1,5 +1,6 @@
 ---
 slug: goyrent
+locale: es
 title:  GoYRENT
 description: Plataforma SaaS diseñada para gestionar alquileres y préstamos de productos y servicios.
 publishedAt: 2024/09/01

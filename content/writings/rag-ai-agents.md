@@ -1,5 +1,6 @@
 ---
 slug: rag-ai-agents
+locale: en
 title: "Understanding AI Agents, LLMs, and RAG: A Powerful Synergy"
 description: Explore how AI agents, Large Language Models (LLMs), and Retrieval-Augmented Generation (RAG) combine to create intelligent, autonomous systems that reason, act, and interact with real-time data.
 readingTime: 5

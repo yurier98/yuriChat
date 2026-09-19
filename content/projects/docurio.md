@@ -16,6 +16,7 @@ sitemap:
     - loc: /projects/goyrent/GoYRENT_Dashboard_5.webp
   videos: []
 slug: docurio
+locale: es
 tags:
   - SaaS
   - Next.js

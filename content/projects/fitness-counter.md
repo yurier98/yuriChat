@@ -1,5 +1,6 @@
 ---
 slug: fitness-counter-vision-computadora-ejercicios
+locale: es
 title: Fitness Counter
 description: Sistema de conteo automático de repeticiones de ejercicios mediante análisis de posturas corporales en tiempo real.
 publishedAt: 2024/09/14

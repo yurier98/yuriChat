@@ -14,7 +14,6 @@ import ToolProjects from '~/components/tool/Projects.vue'
 import ToolResume from '~/components/tool/Resume.vue'
 import ToolSkills from '~/components/tool/Skills.vue'
 import ToolTheme from '~/components/tool/Theme.vue'
-import ToolUsesProxy from '~/components/tool/UsesProxy.vue'
 import ToolWeather from '~/components/tool/Weather.vue'
 import ToolWritings from '~/components/tool/Writings.vue'
 
@@ -29,9 +28,6 @@ const componentMap: Record<ChatType, Component | undefined> = {
   [ChatType.INIT]: undefined,
   [ChatType.DUPLICATED]: ToolDuplicated,
   [ChatType.THEME]: ToolTheme,
-  [ChatType.HARDWARE]: ToolUsesProxy,
-  [ChatType.SOFTWARE]: ToolUsesProxy,
-  [ChatType.IDE]: ToolUsesProxy,
   [ChatType.LANGUAGE]: ToolLanguage,
   [ChatType.ACTIVITY]: ToolActivity,
   [ChatType.CONTACT]: ToolContact,
