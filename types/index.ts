@@ -36,4 +36,5 @@ export const socials: readonly Social[] = [
   { label: 'GitHub', icon: 'i-logos-github-icon', to: 'https://github.com/yurier98' },
   { label: 'Website', icon: 'i-ph-globe-duotone', to: 'https://yurier98.github.io' },
   { label: 'Telegram', icon: 'i-simple-icons-telegram', to: 'https://t.me/yurierherrera' },
+  { label: '+55 (41) 98756-8852', icon: 'i-ph-phone-duotone', to: 'tel:+5541987568852' },
 ]
