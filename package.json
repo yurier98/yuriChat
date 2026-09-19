@@ -50,6 +50,8 @@
     "@types/node": "26.4.1",
     "@vueuse/nuxt": "^14.4.0",
     "better-sqlite3": "13.0.3",
+    "nuxtseo-layer-devtools": "^5.3.16",
+    "satori": "^0.33.4",
     "vue-tsc": "^3.3.11"
   },
   "trustedDependencies": [

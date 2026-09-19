@@ -34,7 +34,16 @@ export default defineNuxtConfig({
   },
 
   ogImage: {
-    enabled: false,
+    enabled: true,
+    defaults: {
+      renderer: 'satori',
+      width: 1200,
+      height: 630,
+      // Long cache in production, no cache in development — otherwise the dev
+      // server keeps serving the first render for 3 days and design edits look
+      // like they did nothing.
+      cacheMaxAgeSeconds: process.env.NODE_ENV === 'production' ? 60 * 60 * 24 * 3 : 0,
+    },
   },
   linkChecker: {
     enabled: false,

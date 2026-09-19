@@ -6,23 +6,25 @@ useHead({
   link: [{ rel: 'icon', type: 'image/webp', href: '/favicon.webp' }],
 })
 
-// Social crawlers (LinkedIn, WhatsApp, Telegram, Facebook) require an ABSOLUTE
-// image URL — a relative "/og.png" is ignored and the share preview comes out blank.
-const ogImage = `${useRequestURL().origin}/og.png`
-
 useSeoMeta({
   // nuxt-seo-utils appends "• <site.name>" to every title, and site.name is
   // "Yurier Herrera" — so any title that already contains the name rendered it
   // twice. Each page writes its own complete, name-bearing title instead.
   titleTemplate: '%s',
-  ogImage,
-  ogImageWidth: 1200,
-  ogImageHeight: 630,
-  ogImageAlt: 'Yurier Herrera — Software Engineer & Entrepreneur',
-  // No twitter:* tags on purpose: unhead deprecates them ("use Open Graph
-  // metadata instead") and the app already sets `automaticTwitterTags: false`.
-  // X falls back to og:image. Add back only `twitterCard: 'summary_large_image'`
-  // if the large-image card on X is worth the dev-only deprecation warning.
+  // og:image is owned by nuxt-og-image (see defineOgImage calls per page).
+})
+
+// Global fallback share image: nuxt-og-image v6 removed `defaults.component`,
+// so pages without their own defineOgImage() would emit no og:image at all.
+// The payload registry is keyed by "og", so a page-level call overrides this.
+// The brand footer is redundant on the home image, where the name IS the title,
+// so it is hidden there via an empty `footer`.
+defineOgImage('OgImagePortfolio', {
+  title: 'Yurier Herrera',
+  subtitle: 'UX-obsessed products · AI & automation',
+  // An empty string is dropped during props serialization, so the component's
+  // default footer would come back. Use a complementary line instead.
+  footer: 'Open to collaboration',
 })
 
 const route = useRoute()
