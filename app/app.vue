@@ -6,6 +6,24 @@ useHead({
   link: [{ rel: 'icon', type: 'image/webp', href: '/favicon.webp' }],
 })
 
+// Social crawlers (LinkedIn, WhatsApp, Telegram, Facebook) require an ABSOLUTE
+// image URL — a relative "/og.png" is ignored and the share preview comes out blank.
+const ogImage = `${useRequestURL().origin}/og.png`
+
+useSeoMeta({
+  // nuxt-seo-utils appends "• <site.name>" to every title, and site.name is
+  // "Yurier Herrera" — so any title that already contains the name rendered it
+  // twice. Each page writes its own complete, name-bearing title instead.
+  titleTemplate: '%s',
+  ogImage,
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogImageAlt: 'Yurier Herrera — Software Engineer & Entrepreneur',
+  twitterCard: 'summary_large_image',
+  twitterImage: ogImage,
+  twitterImageAlt: 'Yurier Herrera — Software Engineer & Entrepreneur',
+})
+
 const route = useRoute()
 const { messages } = useChatStore()
 const head = useLocaleHead()

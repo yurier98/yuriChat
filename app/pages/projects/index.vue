@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 const { t, locale } = useI18n({ useScope: 'global' })
 useSeoMeta({
-  title: 'My Projects',
-  description: t('projects.description'),
+  title: 'Projects — Yurier Herrera',
+  description: 'Selected software projects and case studies by Yurier Herrera.',
 })
 
 const { data: projects } = await useAsyncData('all-projects', () => {

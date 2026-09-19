@@ -42,7 +42,8 @@ export default defineNuxtConfig({
 
   site: {
     url: siteUrl,
-    name: 'Software engineer and entrepreneur building user-centered digital products with AI and automation.',
+    name: 'Yurier Herrera',
+    description: 'Software engineer and entrepreneur building user-centered, AI-assisted digital products.',
   },
 
   schemaOrg: {
@@ -57,6 +58,10 @@ export default defineNuxtConfig({
       description: 'Software engineer and entrepreneur building user-centered digital products with AI and automation.',
       jobTitle: 'Software Engineer & Entrepreneur',
       url: siteUrl,
+      sameAs: [
+        'https://github.com/yurier98',
+        'https://t.me/yurierherrera',
+      ],
     }),
   },
 
@@ -111,7 +116,7 @@ export default defineNuxtConfig({
       {
         label: 'English',
         code: 'en',
-        language: 'en-EN',
+        language: 'en-US',
         icon: 'i-twemoji-flag-united-kingdom',
         file: 'en.json',
       },

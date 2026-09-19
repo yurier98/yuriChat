@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 const { t } = useI18n({ useScope: 'global' })
 useSeoMeta({
-  title: 'My Shelf - Yurier Herrera',
-  description: t('writings.description'),
+  title: 'Writings — Yurier Herrera',
+  description: 'Essays and technical writings by Yurier Herrera on software engineering, AI, and digital products.',
 })
 
 const { data: writings } = await useAsyncData('all-writings', () => {

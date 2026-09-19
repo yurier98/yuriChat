@@ -2,8 +2,8 @@
 import { ChatSender, ChatState, ChatType } from '~~/types'
 
 useSeoMeta({
-  title: 'Yurier Herrera - Software Engineer,  IT Project Manager, UX/UI Designer',
-  description: 'Profesional innovador. Destaco por mi capacidad para liderar equipos multidisciplinarios utilizando metodologías ágiles (SCRUM) y las buenas prácticas del PMBOK, logrando resultados excepcionales en la entrega de soluciones tecnológicas.',
+  title: 'Yurier Herrera — Software Engineer & Entrepreneur',
+  description: 'Software engineer and entrepreneur. UX-obsessed digital products, AI and automation applied to business processes. Open to collaborating with companies and entrepreneurs.',
 })
 
 const { messages } = useChatStore()
